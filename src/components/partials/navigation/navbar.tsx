@@ -1,7 +1,40 @@
+import hamburger from '../../../assets/hamburger-icon.svg';
+import close from '../../../assets/close-icon.svg';
+import { useEffect, useState } from 'react';
+
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+
+  const openNav = () => {
+    setIsNavOpen(true);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+
   return (
-    <nav className="w-full py-10 px-20">
-      <div className="flex items-center justify-between w-full">
+    <nav className="py-10 px-20 fixed top-0 left-0 w-full">
+      <div onClick={openNav} className={`absolute top-4 transition-all duration-700 cursor-pointer ${isScrolled ? 'left-0' : '-left-full'}`}>
+        <img src={hamburger} alt="Hamburger Icon" />
+      </div>
+      <div className={`absolute top-10 transition-all duration-700 opacity-0 -z-10 cursor-pointer`}>
+        <img src={close} alt="Close Icon" />
+      </div>
+      <div className={`flex items-center justify-between w-full relative transition-all duration-700 ${isScrolled ? 'opacity-0 -z-10' : 'z-10'}`}>
         <div className="py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer hover:drop-shadow-none transition-all">
           <p className="text-2xl">Brent Ahrens</p>
         </div>
