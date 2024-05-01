@@ -6,6 +6,45 @@ function App() {
     <div className="App">
       <Navbar />
       <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
+      <h1>This is the new Portfolio</h1>
     </div>
   );
 };
