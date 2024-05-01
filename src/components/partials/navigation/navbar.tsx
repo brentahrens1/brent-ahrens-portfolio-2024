@@ -34,14 +34,14 @@ const Navbar = () => {
 
   return (
     <nav className="py-10 px-20 fixed top-0 left-0 w-full">
-      <div onClick={openNav} className={`absolute top-4 cursor-pointer ${isScrolled ? 'left-0' : '-left-full'}`}>
+      <div onClick={openNav} className={`absolute top-4 cursor-pointer transition-all duration-700 ease-in-out ${isScrolled ? 'left-0' : '-left-full'}`}>
         <img src={hamburger} alt="Hamburger Icon" />
       </div>
-      <div onClick={closeNav} className={`absolute top-10 left-4 transition-all duration-700 cursor-pointer mr-12 ${isNavOpen ? 'block' : 'hidden'}`}>
+      <div onClick={closeNav} className={`absolute top-10 cursor-pointer mr-12 ${isNavOpen ? 'left-9' : '-left-full'}`}>
         <img src={close} alt="Close Icon" />
       </div>
       <div className={`flex items-center justify-between w-full relative ${isScrolled ? 'opacity-0 -z-10' : 'z-10'}`}>
-        <div className="py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer hover:drop-shadow-none transition-all">
+        <div className={`py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer hover:drop-shadow-none transition-all ease-in-out ${isNavOpen ? ' ml-8' : ''}`}>
           <p className="text-2xl">Brent Ahrens</p>
         </div>
         <div className="flex items-center gap-14">
