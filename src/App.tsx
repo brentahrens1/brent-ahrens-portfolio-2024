@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/partials/navigation/navbar';
+import Footer from './components/partials/footer/footer';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <h1>This is the new Portfolio</h1>
       <h1>This is the new Portfolio</h1>
       <h1>This is the new Portfolio</h1>
+      <Footer />
     </div>
   );
 };
