@@ -8,14 +8,20 @@ const Navbar = () => {
 
   const openNav = () => {
     setIsNavOpen(true);
+    setIsScrolled(false);
   };
+
+  const closeNav = () => {
+    setIsNavOpen(false);
+    setIsScrolled(true);
+  }
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 50 && !isNavOpen) {
         setIsScrolled(true);
       } else {
-        setIsScrolled(true);
+        setIsScrolled(false);
       }
     };
 
@@ -28,13 +34,13 @@ const Navbar = () => {
 
   return (
     <nav className="py-10 px-20 fixed top-0 left-0 w-full">
-      <div onClick={openNav} className={`absolute top-4 transition-all duration-700 cursor-pointer ${isScrolled ? 'left-0' : '-left-full'}`}>
+      <div onClick={openNav} className={`absolute top-4 cursor-pointer ${isScrolled ? 'left-0' : '-left-full'}`}>
         <img src={hamburger} alt="Hamburger Icon" />
       </div>
-      <div className={`absolute top-10 transition-all duration-700 opacity-0 -z-10 cursor-pointer`}>
+      <div onClick={closeNav} className={`absolute top-10 left-4 transition-all duration-700 cursor-pointer mr-12 ${isNavOpen ? 'block' : 'hidden'}`}>
         <img src={close} alt="Close Icon" />
       </div>
-      <div className={`flex items-center justify-between w-full relative transition-all duration-700 ${isScrolled ? 'opacity-0 -z-10' : 'z-10'}`}>
+      <div className={`flex items-center justify-between w-full relative ${isScrolled ? 'opacity-0 -z-10' : 'z-10'}`}>
         <div className="py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer hover:drop-shadow-none transition-all">
           <p className="text-2xl">Brent Ahrens</p>
         </div>
