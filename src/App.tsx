@@ -4,7 +4,7 @@ import Footer from './components/partials/footer/footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-fkgrotesk">
       <Navbar />
       <h1>This is the new Portfolio</h1>
       <h1>This is the new Portfolio</h1>

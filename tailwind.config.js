@@ -14,6 +14,9 @@ module.exports = {
       },
       borderWidth: {
         'cta': '1.5px'
+      },
+      fontFamily: {
+        'fkgrotesk': ['fkgrotesk']
       }
     },
   },
