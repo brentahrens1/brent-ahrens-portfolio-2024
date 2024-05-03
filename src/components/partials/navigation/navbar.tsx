@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <nav className="py-10 px-20 fixed top-0 left-0 w-full">
-      <div onClick={openNav} className={`absolute top-4 cursor-pointer ${isScrolled ? 'transition-opacity duration-700 ease-in-out opacity-100 z-10' : 'transition-left duration-200 ease-in-out opacity-0 -z-10'}`}>
+      <div onClick={openNav} className={`absolute top-4 left-0 cursor-pointer ${isScrolled ? 'transition-opacity duration-700 ease-in-out opacity-100 z-10' : 'transition-left duration-200 ease-in-out opacity-0 -z-10'}`}>
         <img src={hamburger} alt="Hamburger Icon" />
       </div>
       <div onClick={closeNav} className={`absolute top-10 cursor-pointer mr-12 ${isNavOpen ? 'left-9' : '-left-full'}`}>
