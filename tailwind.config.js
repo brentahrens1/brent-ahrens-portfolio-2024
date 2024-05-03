@@ -17,6 +17,9 @@ module.exports = {
       },
       fontFamily: {
         'fkgrotesk': ['fkgrotesk']
+      },
+      lineHeight: {
+        '86': '86px'
       }
     },
   },
