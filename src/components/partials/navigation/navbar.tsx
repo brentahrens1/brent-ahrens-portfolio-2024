@@ -41,11 +41,11 @@ const Navbar = () => {
         <img src={close} alt="Close Icon" />
       </div>
       <div className={`flex items-center justify-between w-full relative ${isScrolled ? 'transition-opacity duration-200 ease-in-out opacity-0 -z-10' : 'transition-opacity duration-700 ease-in-out z-10'}`}>
-        <div className={`py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer hover:drop-shadow-none transition-all ease-in-out ${isNavOpen ? ' ml-8' : ''}`}>
+        <div className={`py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all ease-in-out ${isNavOpen ? ' ml-8' : ''}`}>
           <p className="text-2xl">Brent Ahrens</p>
         </div>
         <div className="flex items-center gap-14">
-          <div className="flex items-center gap-20 px-6 py-3 border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer hover:drop-shadow-none transition-all">
+          <div className="flex items-center gap-20 px-6 py-3 border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer transition-all">
             <div>
               <p className="text-sm">Work</p>
             </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
               <p className="text-sm">About</p>
             </div>
           </div>
-          <div className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer hover:drop-shadow-none transition-all">
+          <div className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all">
             <p className="text-sm">Schedule a call</p>
           </div>
         </div>

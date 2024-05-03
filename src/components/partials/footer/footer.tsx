@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center justify-between mt-24">
             <div>
-              <p className="text-sm text-lightgray">© 2010 — 2020</p>
+              <p className="text-sm text-lightgray">©Studio Wozzie 2024</p>
             </div>
             <div className="flex items-center gap-14">
               <p className="text-sm text-lightgray">Linkedin</p>
