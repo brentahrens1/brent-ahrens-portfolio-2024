@@ -20,16 +20,16 @@ const Accordion = ({title, description}: accordionProps) => {
             ${accordionOpen ? 'border-nightblue bg-nightblue' : 'border-white bg-transparent'}
           `}>
             <div 
-              className={`plus-bar w-8 h-[1px] bg-white absolute top-1/2 rotate-45 -translate-y-1/2 transition-all duration-300
+              className={`plus-bar w-8 h-[1px] bg-white absolute top-1/2 rotate-45 -translate-y-1/2 transition-all duration-500
                 ${accordionOpen ? 'opacity-0' : 'opacity-100'}`}
               ></div>
             <div 
-              className={`plus-bar w-8 h-[1px] bg-white -rotate-45 absolute top-1/2 -translate-y-1/2 transition-all duration-300
+              className={`plus-bar w-8 h-[1px] bg-white -rotate-45 absolute top-1/2 -translate-y-1/2 transition-all duration-500
               ${accordionOpen ? ' rotate-[135deg]' : '-rotate-45'}`}
             ></div>
           </div>
         </button>
-        <div className={`grid overflow-hidden transition-all duration-300 ease-in-out h-0 ${
+        <div className={`grid overflow-hidden transition-all duration-500 ease-in-out h-0 ${
           accordionOpen ? 'grid-rows-[1fr] opacity-100 h-52' : 'grid-rows-[0fr] opacity-0'
         }`}>
           <p className="text-white text-2xl text-left overflow-hidden min-h-52 flex items-end">{description}</p>
