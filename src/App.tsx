@@ -7,46 +7,6 @@ function App() {
     <div className="App font-fkgrotesk">
       <Navbar />
       <Home />
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
-      <h1>This is the new Portfolio</h1>
       <Footer />
     </div>
   );

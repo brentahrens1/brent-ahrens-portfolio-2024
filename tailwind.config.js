@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         offwhite: '#F9F9F9',
-        lightgray: '#D9D9D9'
+        lightgray: '#D9D9D9',
+        nightblue: '#3D50FC'
       },
       dropShadow: {
         'button': '0px 4px 4px rgba(0, 0, 0, 0.19)'
