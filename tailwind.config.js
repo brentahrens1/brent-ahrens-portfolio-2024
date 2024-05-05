@@ -10,7 +10,8 @@ module.exports = {
         lightgray: '#D9D9D9',
         nightblue: '#3D50FC',
         youngarts: '#3DC3FC',
-        tempopay: "#F9E59E"
+        tempopay: "#F9E59E",
+        projectSubText: 'rgba(0, 0, 0, 0.45)'
       },
       dropShadow: {
         'button': '0px 4px 4px rgba(0, 0, 0, 0.19)'
