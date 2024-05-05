@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="h-screen w-full bg-black px-20 pt-24 pb-10 flex items-center justify-center">
-      <div className="max-w-6xl flex flex-col justify-between h-full">
+      <div className="flex flex-col justify-between h-full w-full">
         <div>
           <div className="flex flex-col items-start">
             <h1 className="text-7xl text-white font-normal">Los Angeles (PST-01:59PM)</h1>

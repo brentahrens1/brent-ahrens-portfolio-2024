@@ -34,29 +34,42 @@ const Navbar = () => {
 
   return (
     <nav className="py-10 px-20 fixed top-0 left-0 w-full z-50">
-      <div onClick={openNav} className={`absolute top-4 left-0 cursor-pointer ${isScrolled ? 'transition-opacity duration-700 ease-in-out opacity-100 z-10' : 'transition-left duration-200 ease-in-out opacity-0 -z-10'}`}>
+      <div 
+        onClick={openNav} className={`absolute top-4 left-0 cursor-pointer 
+        ${isScrolled ? 'transition-opacity duration-700 ease-in-out opacity-100 z-10' 
+        : 'transition-left duration-200 ease-in-out opacity-0 -z-10'}`}
+      >
         <img src={hamburger} alt="Hamburger Icon" />
       </div>
       <div onClick={closeNav} className={`absolute top-10 cursor-pointer mr-12 ${isNavOpen ? 'left-9' : '-left-full'}`}>
         <img src={close} alt="Close Icon" />
       </div>
-      <div className={`flex items-center justify-between w-full relative ${isScrolled ? 'transition-opacity duration-200 ease-in-out opacity-0 -z-10' : 'transition-opacity duration-700 ease-in-out z-10'}`}>
-        <div className={`py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all ease-in-out ${isNavOpen ? ' ml-8' : ''}`}>
+      <div 
+        className={`flex items-center justify-between w-full relative 
+        ${isScrolled ? 'transition-opacity duration-200 ease-in-out opacity-0 -z-10' 
+        : 'transition-opacity duration-700 ease-in-out z-10'}`}
+      >
+        <div 
+          className={`py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all ease-in-out hover:text-nightblue hover:underline 
+          ${isNavOpen ? ' ml-8' : ''}`}
+        >
           <p className="text-2xl">Brent Ahrens</p>
         </div>
         <div className="flex items-center gap-14">
-          <div className="flex items-center gap-20 px-6 py-3 border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer transition-all">
-            <div>
+          <div className="flex items-center border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer transition-all">
+            <div className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-6 py-3 pr-10'>
               <p className="text-sm">Work</p>
             </div>
-            <div>
+            <div className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline py-3 px-10'>
               <p className="text-sm">Services</p>
             </div>
-            <div>
+            <div className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-10 pr-6 py-3'>
               <p className="text-sm">About</p>
             </div>
           </div>
-          <div className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all">
+          <div 
+            className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
+              transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
             <p className="text-sm">Schedule a call</p>
           </div>
         </div>
