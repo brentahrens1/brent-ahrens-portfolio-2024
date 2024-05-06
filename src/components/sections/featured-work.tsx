@@ -48,7 +48,7 @@ const FeaturedWork = () => {
         <div>
           <div ref={ref1} className='mb-[260px]'>
             <div className='relative border-4 border-youngarts bg-youngarts rounded-[25px] overflow-hidden pt-14 max-w-[775px] min-h-[445px]'>
-              <div className='absolute top-6 left-5 flex items-center gap-3'>
+              <div className='absolute top-5 left-5 flex items-center gap-3'>
                 <div className='bg-white w-4 h-4 rounded-full'></div>
                 <div className='bg-white w-4 h-4 rounded-full'></div>
                 <div className='bg-white w-4 h-4 rounded-full'></div>
@@ -81,7 +81,7 @@ const FeaturedWork = () => {
           </div>
           <div ref={ref3}>
             <div className='relative border-4 border-tempopay bg-tempopay rounded-[25px] overflow-hidden pt-14 max-w-[775px] min-h-[445px]'>
-              <div className='absolute top-6 left-5 flex items-center gap-3'>
+              <div className='absolute top-5 left-5 flex items-center gap-3'>
                 <div className='bg-white w-4 h-4 rounded-full'></div>
                 <div className='bg-white w-4 h-4 rounded-full'></div>
                 <div className='bg-white w-4 h-4 rounded-full'></div>

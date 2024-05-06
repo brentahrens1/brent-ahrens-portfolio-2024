@@ -1,6 +1,7 @@
 import SiteHeader from "../sections/site-header";
 import Services from "../sections/services";
 import FeaturedWork from "../sections/featured-work";
+import SelectedClients from "../sections/selected-clients";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <SiteHeader />
       <FeaturedWork />
       <Services />
+      <SelectedClients />
     </div>
   );
 };
