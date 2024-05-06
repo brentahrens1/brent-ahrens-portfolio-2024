@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/partials/navigation/navbar';
 import Footer from './components/partials/footer/footer';
 import Home from './components/pages/home';
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
