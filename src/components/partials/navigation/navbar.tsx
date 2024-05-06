@@ -1,6 +1,7 @@
 import hamburger from '../../../assets/hamburger-icon.svg';
 import close from '../../../assets/close-icon.svg';
 import { useEffect, useState } from 'react';
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -53,25 +54,27 @@ const Navbar = () => {
           className={`py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all ease-in-out hover:text-nightblue hover:underline 
           ${isNavOpen ? ' ml-8' : ''}`}
         >
-          <p className="text-2xl">Brent Ahrens</p>
+          <Link to="/" className="text-2xl">Brent Ahrens</Link>
         </div>
         <div className="flex items-center gap-14">
           <div className="flex items-center border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer transition-all">
-            <div className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-6 py-3 pr-10'>
+            <NavLink to="/work" className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-6 py-3 pr-10'>
               <p className="text-sm">Work</p>
-            </div>
-            <div className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline py-3 px-10'>
+            </NavLink>
+            <NavLink
+              to="/services" className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline py-3 px-10'>
               <p className="text-sm">Services</p>
-            </div>
-            <div className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-10 pr-6 py-3'>
+            </NavLink>
+            <NavLink to="/about" className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-10 pr-6 py-3'>
               <p className="text-sm">About</p>
-            </div>
+            </NavLink>
           </div>
-          <div 
+          <NavLink
+            to="/contact"
             className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
               transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
             <p className="text-sm">Schedule a call</p>
-          </div>
+          </NavLink>
         </div>
       </div>
     </nav>

@@ -1,22 +1,4 @@
-/* .plus-hover, .plus-bar {
-  transition: all 400ms ease-in-out;
+.active {
+  color: #3D50FC;
+  text-decoration: underline;
 }
-
-.accordion-expand {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 3s ease-in-out;
-}
-
-.accordion:hover .plus-bar:nth-child(1) {
-  transform: rotate(-45deg);
-}
-
-.accordion:hover .plus-hover {
-  background-color: #3D50FC;
-}
-
-.accordion:hover .accordion-expand {
-  transition: max-height 3s ease-in-out;
-  max-height: 100%;
-} */
