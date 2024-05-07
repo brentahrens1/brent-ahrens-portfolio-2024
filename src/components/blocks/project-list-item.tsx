@@ -19,7 +19,8 @@ const ProjectListItem = ({
     <div 
       onMouseEnter={() => setIsHovered(!isHovered)}
       onMouseLeave={() => setIsHovered(!isHovered)}
-      className={`py-7 border-b border-black  relative`}>
+      className={`py-7 border-b border-black  relative`}
+    >
       <div className="flex items-start justify-between gap-5">
         <div className={
           `absolute top-0 left-0 h-full transition-all ease-in-out -z-10 
