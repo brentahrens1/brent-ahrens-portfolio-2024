@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 type projectProps = {
   title: string,
@@ -6,12 +7,13 @@ type projectProps = {
   year: string,
   url: string,
   bgColor: string,
-  imageOne: string,
-  imageTwo: string
+  previewImageOne: string,
+  previewImageTwo: string,
+  slug: string
 }
 
 const ProjectListItem = ({
-  title, description, year, url, bgColor, imageOne, imageTwo
+  title, description, year, url, bgColor, previewImageOne, previewImageTwo, slug
 }: projectProps) => {
   const [ isHovered, setIsHovered ] = useState<boolean>(false);
 
@@ -19,7 +21,7 @@ const ProjectListItem = ({
     <div 
       onMouseEnter={() => setIsHovered(!isHovered)}
       onMouseLeave={() => setIsHovered(!isHovered)}
-      className={`py-7 border-b border-black  relative`}
+      className={`py-7 border-b border-black relative w-full`}
     >
       <div className="flex items-start justify-between gap-5">
         <div className={
@@ -35,16 +37,18 @@ const ProjectListItem = ({
         <div className="flex items-center justify-between gap-24 pr-20 w-[500px]">
           <p className="text-2xl text-projectSubText">{year}</p>
           <div className="flex items-center gap-4">
-            <div
+            <Link
+              to={url}
               className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
                 transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
               <p className="text-sm">Website</p>
-            </div>
-            <div
+            </Link>
+            <Link
+              to={`/casestudy/${slug}`}
               className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
                 transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
               <p className="text-sm">Case Study</p>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -55,8 +59,8 @@ const ProjectListItem = ({
           `
         }
       >
-        <img className="w-full pt-16" src={imageOne} alt={title} />
-        <img className="w-full pt-16" src={imageTwo} alt={title} />
+        <img className="w-full pt-16" src={previewImageOne} alt={title} />
+        <img className="w-full pt-16" src={previewImageTwo} alt={title} />
       </div>
     </div>
   );
