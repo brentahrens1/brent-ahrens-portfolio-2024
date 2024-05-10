@@ -1,8 +1,11 @@
-import youngarts from '../../assets/featured-work/youngarts.png';
-import tempopay from '../../assets/featured-work/tempopay.png';
- import wnw from '../../assets/featured-work/wnw-mobile.png';
-
 import { useInView } from "react-intersection-observer";
+import { Link } from 'react-router-dom';
+
+import youngarts from '../../assets/projects/youngarts/youngarts-desktop.png';
+import tempopay from '../../assets/projects/tempopay/tempopay-desktop.png';
+import wnw from '../../assets/projects/wnw/wnw-mobile.png';
+import { url } from "inspector";
+
 
 
 
@@ -16,6 +19,7 @@ const FeaturedWork = () => {
       <div className='flex justify-center gap-7 mb-40'>
         <div>
           <p className="text-2xl mb-44">Featured Work</p>
+          
           <div ref={ref2}>
             <div className="bg-nightblue border-4 border-nightblue rounded-[30px] h-[680px] w-[315px] relative overflow-hidden pt-14">
               <div className="absolute top-4 left-1/2 -translate-x-1/2 h-4 w-28 bg-white rounded-full"></div>
@@ -31,16 +35,18 @@ const FeaturedWork = () => {
                 <p className='text-2xl mb-[6px]'>Working Not Working</p>
               </div>
               <div className='flex items-center justify-between gap-5 mt-6'>
-                <div 
+                <Link
+                  to="/sdf"
                   className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
                     transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
                   <p className="text-sm">Website</p>
-                </div>
-                <div 
+                </Link>
+                <Link
+                  to="sdfdsf" 
                   className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
                     transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
                   <p className="text-sm">Case Study</p>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -66,11 +72,13 @@ const FeaturedWork = () => {
                 <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
               </div>
               <div className='flex gap-5'>
-                <div 
+                <Link
+                  to="www.youngarts.com"
+                  target='_blank'
                   className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
                     transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
                   <p className="text-sm">Website</p>
-                </div>
+                </Link>
                 <div 
                   className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
                     transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
@@ -115,7 +123,7 @@ const FeaturedWork = () => {
         </div>
       </div>
       <div className='py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all ease-in-out hover:text-nightblue hover:underline w-52'>
-        <p className="text-2xl">View all work</p>
+        <Link to="/work" className="text-2xl">View all work</Link>
       </div>
     </div>
   );

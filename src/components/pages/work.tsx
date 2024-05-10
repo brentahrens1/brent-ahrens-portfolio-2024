@@ -17,9 +17,10 @@ const Work = () => {
               description={project.description}
               year={project.year}
               url={project.url}
-              imageOne={project.imageOne}
-              imageTwo={project.imageTwo}
+              previewImageOne={project.previewImageOne}
+              previewImageTwo={project.previewImageTwo}
               bgColor={project.bgColor}
+              slug={project.slug}
             />
           )
         })
