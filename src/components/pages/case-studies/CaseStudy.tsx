@@ -18,10 +18,10 @@ const CaseStudy = () => {
     <div className="mt-48 flex flex-col items-center justify-center">
       {
         project.iframe ?
-          <div className={`border-4 border-${project.bgColor} rounded-3xl overflow-hidden`}>
+          <div className={`border-4 border-${project.bgColor} rounded-3xl overflow-hidden ${isDesktop ? 'mt-0' : '-mt-10'}`}>
             <iframe
               width={isDesktop ? '890' : '300'}
-              height="504"
+              height={isDesktop ? '504' : '544'}
               style={{ border:" 0" }}
               loading="lazy"
               allowFullScreen
@@ -31,10 +31,10 @@ const CaseStudy = () => {
           </div>
           :
           <div className="flex items-center justify-center">
-            <div className={`h-[455px] w-[250px] ${isDesktop ? 'hidden' : 'block'}`}>
+            <div className={`h-[520px] w-[250px] -mt-10 ${isDesktop ? 'hidden' : 'block'}`}>
               <Mobile mobile={project.mobile} title={project.title} />
             </div>
-            <div className={`max-w-[775px] min-h-[445px] ${isDesktop ? 'block' : 'hidden'}`}>
+            <div className={`max-w-[775px] h-[480px] ${isDesktop ? 'block' : 'hidden'}`}>
               <Desktop desktop={project.desktop} title={project.title} />
             </div>
           </div>
@@ -51,7 +51,8 @@ const CaseStudy = () => {
               <p className="text-sm">{isDesktop ? 'View Mobile' : 'View Desktop'}</p>
             </div>
             <Link
-              to={`/casestudy/${project.url}`}
+              to={`${project.url}`}
+              target='_blank'
               className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
                 transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
               <p className="text-sm">Website</p>

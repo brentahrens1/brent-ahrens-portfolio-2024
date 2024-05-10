@@ -4,6 +4,7 @@ import wnwDesktop from '../assets/projects/wnw/wnwdesktop.png';
 import wnwMobile from '../assets/projects/wnw/wnw-mobile.png';
 import tempopayDesktop from '../assets/projects/tempopay/tempopay-desktop.png';
 import youngartsDesktop from '../assets/projects/youngarts/youngarts-desktop.png';
+import youngartsMobile from '../assets/projects/youngarts/youngarts-mobile.png';
 
 export const projects = [
   {
@@ -18,7 +19,7 @@ export const projects = [
     tags: ['wordpress', 'tailwind', 'timber/twig'],
     featured: true,
     desktop: youngartsDesktop,
-    mobile: wnwMobile,
+    mobile: youngartsMobile,
     iframe: false
   },
   {

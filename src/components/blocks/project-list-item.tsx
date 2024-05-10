@@ -39,6 +39,7 @@ const ProjectListItem = ({
           <div className="flex items-center gap-4">
             <Link
               to={url}
+              target='_blank'
               className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
                 transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
               <p className="text-sm">Website</p>
