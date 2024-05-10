@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import WebsiteButton from "./buttons/website-button";
+import CaseStudyButton from "./buttons/case-study-button";
 
 type projectProps = {
   title: string,
@@ -37,19 +39,8 @@ const ProjectListItem = ({
         <div className="flex items-center justify-between gap-24 pr-20 w-[500px]">
           <p className="text-2xl text-projectSubText">{year}</p>
           <div className="flex items-center gap-4">
-            <Link
-              to={url}
-              target='_blank'
-              className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
-                transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-              <p className="text-sm">Website</p>
-            </Link>
-            <Link
-              to={`/casestudy/${slug}`}
-              className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
-                transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-              <p className="text-sm">Case Study</p>
-            </Link>
+            <WebsiteButton url={url} />
+            <CaseStudyButton slug={slug} />
           </div>
         </div>
       </div>

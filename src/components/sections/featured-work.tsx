@@ -1,13 +1,12 @@
 import { useInView } from "react-intersection-observer";
 import { Link } from 'react-router-dom';
+import WebsiteButton from "../blocks/buttons/website-button";
+import CaseStudy from "../pages/case-studies/CaseStudy";
 
 import youngarts from '../../assets/projects/youngarts/youngarts-desktop.png';
 import tempopay from '../../assets/projects/tempopay/tempopay-desktop.png';
 import wnw from '../../assets/projects/wnw/wnw-mobile.png';
-import { url } from "inspector";
-
-
-
+import CaseStudyButton from "../blocks/buttons/case-study-button";
 
 const FeaturedWork = () => {
   const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.5, rootMargin: '-100px' });
@@ -35,18 +34,8 @@ const FeaturedWork = () => {
                 <p className='text-2xl mb-[6px]'>Working Not Working</p>
               </div>
               <div className='flex items-center justify-between gap-5 mt-6'>
-                <Link
-                  to="/sdf"
-                  className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
-                    transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-                  <p className="text-sm">Website</p>
-                </Link>
-                <Link
-                  to="sdfdsf" 
-                  className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
-                    transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-                  <p className="text-sm">Case Study</p>
-                </Link>
+                <WebsiteButton url={"www.workingnotworking.com"} />
+                <CaseStudyButton slug={"workingnotworking"} />
               </div>
             </div>
           </div>
@@ -72,18 +61,8 @@ const FeaturedWork = () => {
                 <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
               </div>
               <div className='flex gap-5'>
-                <Link
-                  to="www.youngarts.com"
-                  target='_blank'
-                  className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
-                    transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-                  <p className="text-sm">Website</p>
-                </Link>
-                <div 
-                  className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
-                    transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-                  <p className="text-sm">Case Study</p>
-                </div>
+                <WebsiteButton url={"www.youngarts.com"} />
+                <CaseStudyButton slug={"youngarts"} />
               </div>
             </div>
           </div>
@@ -107,16 +86,8 @@ const FeaturedWork = () => {
                 <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
               </div>
               <div className='flex gap-5'>
-                <div 
-                  className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
-                    transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-                  <p className="text-sm">Website</p>
-                </div>
-                <div 
-                  className="px-6 py-3 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer 
-                    transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-                  <p className="text-sm">Case Study</p>
-                </div>
+                <WebsiteButton url={"www.tempopay.com"} />
+                <CaseStudyButton slug={"tempopay"} />
               </div>
             </div>
           </div>

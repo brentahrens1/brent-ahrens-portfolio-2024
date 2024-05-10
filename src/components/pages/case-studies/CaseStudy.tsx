@@ -4,6 +4,8 @@ import { projects } from "../../../utils/projects";
 import ProjectListItem from "../../blocks/project-list-item";
 import Mobile from "../../blocks/mobile";
 import Desktop from "../../blocks/desktop";
+import WebsiteButton from '../../blocks/buttons/website-button';
+import CaseStudyButton from '../../blocks/buttons/case-study-button';
 
 const CaseStudy = () => {
   const [ isDesktop, setIsDesktop ] = useState<boolean>(true);
@@ -50,13 +52,7 @@ const CaseStudy = () => {
                 transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
               <p className="text-sm">{isDesktop ? 'View Mobile' : 'View Desktop'}</p>
             </div>
-            <Link
-              to={`${project.url}`}
-              target='_blank'
-              className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
-                transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
-              <p className="text-sm">Website</p>
-            </Link>
+            <WebsiteButton url={project.url} />
           </div>
         </div>
       </div>
