@@ -59,7 +59,7 @@ export const projects = [
     url: 'https://acehotel.com/',
     previewImageOne: testOne,
     previewImageTwo: testTwo,
-    bgColor: '#FFFFFF',
+    bgColor: '#B39474',
     slug: 'acehotel',
     tags: ['Vue Js', 'SASS'],
     featured: false,

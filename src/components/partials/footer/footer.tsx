@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="h-screen w-full bg-black px-20 pt-24 pb-10 flex items-center justify-center">
@@ -18,16 +20,16 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <div className="flex items-center justify-between gap-20 py-3 border rounded-full px-20 bg-offwhite cursor-pointer">
-            <div>
+          <div className="flex items-center justify-between gap-20 border rounded-full px-20 bg-offwhite cursor-pointer">
+            <Link to="/work" className="py-3">
               <p className="text-7xl text-black">Work</p>
-            </div>
-            <div>
+            </Link>
+            <Link to="/services" className="py-3">
               <p className="text-7xl text-black">Services</p>
-            </div>
-            <div>
+            </Link>
+            <Link to="/about" className="py-3">
               <p className="text-7xl text-black">About</p>
-            </div>
+            </Link>
           </div>
           <div className="flex justify-center items-center gap-20 py-3 border-cta rounded-full px-20 bg-black cursor-pointer mt-12">
             <div className="text-center">
@@ -39,9 +41,8 @@ const Footer = () => {
               <p className="text-sm text-lightgray">©Studio Wozzie 2024</p>
             </div>
             <div className="flex items-center gap-14">
-              <p className="text-sm text-lightgray">Linkedin</p>
-              <p className="text-sm text-lightgray">Github</p>
-              <p className="text-sm text-lightgray">Instagram</p>
+              <Link to="https://www.linkedin.com/in/brenthahrens/" target="_blank" className="text-sm text-lightgray">Linkedin</Link>
+              <Link to="https://github.com/brentahrens1" className="text-sm text-lightgray">Github</Link>
             </div>
           </div>
         </div>
