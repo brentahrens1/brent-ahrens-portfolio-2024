@@ -4,12 +4,12 @@ import profilePic from "../../assets/profile-pic.png";
 
 const About = () => {
   return (
-    <div className="bg-black pt-40 flex justify-center items-center flex-col">
+    <div className="bg-black pt-52 flex justify-center items-center flex-col">
       <div className="px-20 pb-24 bg-black after:clear-both after:table">
         <div className="overflow-hidden h-36 w-36 rounded-full shrink-0 float-left mr-6">
           <img className="w-full h-full object-cover" src={profilePic} alt="Brent Ahrens | Profile Pic" />
         </div>
-        <p className="text-white text-7xl max-w-[1108px]"> 
+        <p className="text-white text-7xl max-w-[1108px]">
           I'm a highly driven developer with full-stack experience and a passion for frontend.
           I thrive in energetic, creative, and collaborative environments where I can help to build great
           products and continue to grow.
