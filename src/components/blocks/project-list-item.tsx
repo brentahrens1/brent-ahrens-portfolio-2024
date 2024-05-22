@@ -46,13 +46,13 @@ const ProjectListItem = ({
       </div>
       <div 
         className={
-          `grid grid-cols-2 grid-rows-1 gap-5 px-20 overflow-hidden transition-all ease-in-out h-0
-          ${isHovered ? 'grid-rows-[1fr] opacity-100 duration-[2s] delay-[6s] h-[650px]' : 'grid-rows-[0fr] duration-[2s] opacity-0'}
+          `grid grid-cols-2 grid-rows-1 gap-5 px-20 overflow-hidden transition-all ease-in-out h-0 w-[35%] max-h-52
+          ${isHovered ? 'grid-rows-[1fr] opacity-100 duration-[2s] delay-[6s] h-[300px]' : 'grid-rows-[0fr] duration-[2s] opacity-0'}
           `
         }
       >
-        <img className="w-full pt-16" src={previewImageOne} alt={title} />
-        <img className="w-full pt-16" src={previewImageTwo} alt={title} />
+        <img className="pt-5" src={previewImageOne} alt={title} />
+        <img className="pt-5" src={previewImageTwo} alt={title} />
       </div>
     </div>
   );

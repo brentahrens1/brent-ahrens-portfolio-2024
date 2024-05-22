@@ -4,7 +4,7 @@ export const serviceItems = [
     description: "With our AIO service, we're able to handle one-off projects with a comprehensive package of consultation, design, development, and deployment."
   },
   {
-    title: "Project Based Development",
+    title: "What I love about",
     description: "With our AIO service, we're able to handle one-off projects with a comprehensive package of consultation, design, development, and deployment."
   },
   {

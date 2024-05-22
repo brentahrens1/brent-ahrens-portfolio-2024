@@ -20,12 +20,15 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-white py-20 px-20 flex flex-col gap-24">
+    <div className="bg-white py-20 flex flex-col gap-16">
+      <div className="border-b py-12 border-black flex justify-start items-center">
+        <p className="text-2xl px-20">FAQ</p>
+      </div>
       {
         faq.map((faqQuestion, id) => {
           return (
-            <div key={id}>
-              <p className="text-2xl m-6">{faqQuestion.title}</p>
+            <div key={id} className="px-20">
+              <p className="text-2xl m-6 ml-0">{faqQuestion.title}</p>
               <div className="flex items-center gap-6">
                 {
                   faqQuestion.question.map((question, id) => {
@@ -59,7 +62,7 @@ const Faq = () => {
               faqAnswer.title === titleClicked ? (
                 <div 
                   key={id} 
-                  className={`items-center bg-black fixed bottom-0 left-0 w-full px-24 py-12
+                  className={`items-start bg-black fixed bottom-0 left-0 w-full px-24 py-12 min-h-64
                   ${isAnswerOpen ? 'flex' : 'hidden'}`}
                 >
                   <div onClick={handleAnswerClose} className={`absolute top-7 left-7 cursor-pointer mr-12'}`}>
