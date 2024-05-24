@@ -51,10 +51,10 @@ const Navbar = () => {
         : 'transition-opacity duration-700 ease-in-out z-10'}`}
       >
         <div 
-          className={`py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all ease-in-out hover:text-nightblue hover:underline 
+          className={`flex items-center justify-center h-11 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all ease-in-out hover:text-nightblue hover:underline 
           ${isNavOpen ? ' ml-8' : ''}`}
         >
-          <Link to="/" className="text-2xl">Brent Ahrens</Link>
+          <Link to="/" className="text-2xl px-6 h-full w-full flex items-center justify-center">Brent Ahrens</Link>
         </div>
         <div className="flex items-center gap-14">
           <div className="flex items-center border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer transition-all">
