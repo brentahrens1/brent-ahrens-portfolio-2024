@@ -25,7 +25,7 @@ const WeatherPopup = ({weatherOpen}: weatherPopupProps) => {
       {
       getWeather ?
         <div
-          className={`flex absolute -top-[100%] right-[15%] bg-white border drop-shadow-button rounded-3xl transition-all duration-[.6s] z-20
+          className={`flex absolute -top-[100%] right-0 bg-white border drop-shadow-button rounded-3xl transition-all duration-[.6s] z-20
           flex-col items-center justify-center py-6 h-56 ${weatherOpen ? 'w-80 opacity-1' : 'w-0 opacity-0'}`}
         >
           <div className={`flex flex-col items-center justify-center transition-all duration-200 ${weatherOpen ? 'opacity-1' : 'opacity-0'}`}>
