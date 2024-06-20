@@ -5,6 +5,7 @@ import wnwMobile from '../assets/projects/wnw/wnw-mobile.png';
 import tempopayDesktop from '../assets/projects/tempopay/tempopay-desktop.png';
 import youngartsDesktop from '../assets/projects/youngarts/youngarts-desktop.png';
 import youngartsMobile from '../assets/projects/youngarts/youngarts-mobile.png';
+import superla from '../assets/projects/superla/superla-desktop.png';
 
 export const projects = [
   {
@@ -109,6 +110,21 @@ export const projects = [
     tags: ['wordpress', 'tailwind', 'timber/twig'],
     featured: false,
     desktop: wnwDesktop,
+    mobile: wnwMobile,
+    iframe: true
+  },
+  {
+    title: 'Super LA',
+    description: 'A one-stop shop for all your real estate project needs.',
+    year: '2024',
+    url: 'https://www.super.la',
+    previewImageOne: testOne,
+    previewImageTwo: testTwo,
+    bgColor: '#ca9a8e',
+    slug: 'superla',
+    tags: ['webflow', 'javascript', 'css', 'ecommerce'],
+    featured: false,
+    desktop: superla,
     mobile: wnwMobile,
     iframe: true
   },

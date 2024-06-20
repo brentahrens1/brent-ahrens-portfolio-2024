@@ -1,8 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { Link } from 'react-router-dom';
 import WebsiteButton from "../blocks/buttons/website-button";
-import CaseStudy from "../pages/case-studies/CaseStudy";
-
+import Button from "../blocks/buttons/button";
 import youngarts from '../../assets/projects/youngarts/youngarts-desktop.png';
 import tempopay from '../../assets/projects/tempopay/tempopay-desktop.png';
 import wnw from '../../assets/projects/wnw/wnw-mobile.png';
@@ -93,8 +92,8 @@ const FeaturedWork = () => {
           </div>
         </div>
       </div>
-      <div className='py-2 px-6 border drop-shadow-button rounded-3xl bg-offwhite cursor-pointer transition-all ease-in-out hover:text-nightblue hover:underline w-52'>
-        <Link to="/work" className="text-2xl">View all work</Link>
+      <div className='w-52'>
+        <Button url="/work" text="View all work" hoverTextColor="text-nightblue" fontSize='text-2xl' bgColor="bg-offwhite" />
       </div>
     </div>
   );

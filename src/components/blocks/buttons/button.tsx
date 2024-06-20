@@ -8,25 +8,26 @@ type buttonProps = {
   borderColor?: string,
   hoverTextColor?: string,
   hoverBackgroundColor?: string
+  fontSize?: string
 }
 
 const Button = (
-  { text, url, textColor, hoverBackgroundColor, hoverTextColor, bgColor, borderColor }: buttonProps) => {
+  { text, url, textColor, hoverBackgroundColor, hoverTextColor, bgColor, borderColor, fontSize }: buttonProps) => {
   return (
     <div>
       {
         url ?
           <Link
-            to={`/casestudy/${url}`}
-            className={`px-6 py-3 border ${borderColor} drop-shadow-button rounded-full ${bgColor} cursor-pointer 
-              transition-all duration-200 ease-in-out hover:${hoverBackgroundColor} hover:underline`}>
-            <p className="text-sm text-center">{text}</p>
+            to={`${url}`}
+            className={`px-6 py-3 border ${borderColor} drop-shadow-button ${bgColor} rounded-full block cursor-pointer 
+              transition-all duration-200 ease-in-out hover:${hoverTextColor} hover:${hoverBackgroundColor} hover:underline`}>
+            <p className={`${fontSize} text-center ${textColor}`}>{text}</p>
           </Link>
         :
           <div
-            className={`px-6 py-3 border drop-shadow-button rounded-full ${bgColor} cursor-pointer 
+            className={`block px-6 py-3 border drop-shadow-button ${bgColor} rounded-full cursor-pointer 
               transition-all duration-200 ease-in-out hover:${hoverBackgroundColor} hover:underline`}>
-            <p className={`text-sm text-center ${textColor} hover:${hoverTextColor}`}>{text}</p>
+            <p className={`${fontSize} text-center ${textColor} hover:${hoverTextColor}`}>{text}</p>
           </div>
       }
     </div>
