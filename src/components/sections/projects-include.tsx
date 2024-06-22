@@ -7,9 +7,9 @@ const ProjectsInclude = () => {
         <p className="text-2xl px-20">All projects include</p>
       </div>
       <div className="px-20 mt-36">
-        <div className="w-[208px]">
-          <Button text="Development" hoverTextColor="text-nightblue" />
-        </div>
+        {/* <div className="w-[208px]">
+          <Button url="/work" text="Development" hoverTextColor="text-nightblue" fontSize='text-2xl' bgColor="bg-offwhite" />
+        </div> */}
         <div className="flex flex-col gap-5 mt-7">
           <p className="text-2xl">User-friendly no code content management with training.</p>
           <p className="text-2xl">Deployment assistance.Development/Deployment consultation.</p>

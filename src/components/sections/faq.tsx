@@ -62,7 +62,7 @@ const Faq = () => {
               faqAnswer.title === titleClicked ? (
                 <div 
                   key={id} 
-                  className={`items-start bg-black fixed bottom-0 left-0 w-full px-24 py-12 min-h-64
+                  className={`items-start bg-black fixed bottom-0 left-0 w-full px-24 py-12 min-h-64 z-10
                   ${isAnswerOpen ? 'flex' : 'hidden'}`}
                 >
                   <div onClick={handleAnswerClose} className={`absolute top-7 left-7 cursor-pointer mr-12'}`}>
