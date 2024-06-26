@@ -32,18 +32,18 @@ const CaseStudy = () => {
             </iframe>
           </div>
           :
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center section-h-padding">
             <div className={`h-[520px] w-[250px] -mt-10 ${isDesktop ? 'hidden' : 'block'}`}>
               <Mobile mobile={project.mobile} title={project.title} />
             </div>
-            <div className={`max-w-[775px] h-[480px] ${isDesktop ? 'block' : 'hidden'}`}>
+            <div className={`max-w-[775px] lg:h-[480px] ${isDesktop ? 'block' : 'hidden'}`}>
               <Desktop desktop={project.desktop} title={project.title} />
             </div>
           </div>
       }
-      <div className="flex items-center w-full justify-between mt-28">
-        <p className="text-7xl pl-20">{project.title}</p>
-        <div className="flex items-center gap-20 w-[500px] pr-20">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center w-full justify-between mt-8 lg:mt-28 section-h-padding">
+        <p className="large-header mb-3 lg:mb-0">{project.title}</p>
+        <div className="flex items-center justify-between lg:gap-20 lg:w-[500px]">
           <p className="text-projectSubText text-2xl">{project.year}</p>
           <div className="flex items-center gap-4">
             <div
@@ -56,11 +56,11 @@ const CaseStudy = () => {
           </div>
         </div>
       </div>
-      <div className="self-start mt-12 px-20">
+      <div className="self-start mt-12 section-h-padding">
         <p className="text-projectSubText text-2xl">{project.description}</p>
-        <div className="flex items-center mt-12">
+        <div className="flex items-center flex-wrap mt-12">
           <p className="text-projectSubText text-2xl mr-5">Tags:</p>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center flex-wrap gap-5 mt-3 lg:mt-0">
             {
               project.tags.map(tag => {
                 return (
@@ -75,7 +75,7 @@ const CaseStudy = () => {
           </div>
         </div>
       </div>
-      <p className="text-2xl self-start pl-20 border-b border-black w-full pb-8 pt-24">Featured Projects</p>
+      <p className="text-2xl self-start section-padding-l border-b border-black w-full pb-8 pt-24">Featured Projects</p>
       {
         projects.map(project => {
           return (

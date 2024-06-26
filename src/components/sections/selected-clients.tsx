@@ -6,7 +6,7 @@ import Button from '../blocks/buttons/button';
 
 const SelectedClients = () => {
   return (
-    <div className='px-20 py-12 flex flex-col items-center justify-start'>
+    <div className='section-h-padding py-12 flex flex-col items-center justify-start'>
       <div className='w-52 mb-[120px]'>
         <Button url="/work" text="View all work" hoverTextColor="text-nightblue" fontSize='text-2xl' bgColor="bg-offwhite" />
       </div>

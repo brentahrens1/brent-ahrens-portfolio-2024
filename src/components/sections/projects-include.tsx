@@ -4,9 +4,9 @@ const ProjectsInclude = () => {
   return (
     <div className="bg-white pb-12">
       <div className="border-b py-12 border-black flex justify-start items-center">
-        <p className="text-2xl px-20">All projects include</p>
+        <p className="text-2xl section-h-padding">All projects include</p>
       </div>
-      <div className="px-20 mt-36">
+      <div className="section-h-padding mt-36">
         {/* <div className="w-[208px]">
           <Button url="/work" text="Development" hoverTextColor="text-nightblue" fontSize='text-2xl' bgColor="bg-offwhite" />
         </div> */}

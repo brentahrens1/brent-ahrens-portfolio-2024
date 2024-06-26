@@ -8,8 +8,8 @@ const SiteHeader = () => {
   
 
   return (
-    <div className="w-full flex items-center justify-center h-screen px-20">
-      <div className="text-4xl leading-[45px] md:text-5xl md:leading-[58px] xl:text-7xl xl:leading-86 text-left w-full relative">
+    <div className="w-full flex items-center justify-center h-screen section-h-padding">
+      <div className="large-header text-left w-full relative">
         Front-End developer, living<br /> in 
         <span
           onMouseEnter={() => setWeatherOpen(true)}

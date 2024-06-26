@@ -2,8 +2,8 @@ import Button from "../blocks/buttons/button";
 
 const DevelopmentIncludes = () => {
   return (
-    <div className="px-20 py-12">
-      <h1 className="text-7xl text-white mb-48">Development includes</h1>
+    <div className="section-h-padding py-12">
+      <h1 className="large-header text-white mb-48">Development includes</h1>
       <div className="bg-black flex items-center flex-wrap gap-9">
         <Button text="Front-end development" bgColor="bg-black" textColor="text-white" />
         <Button text="Back-end development" bgColor="bg-black" textColor="text-white" />

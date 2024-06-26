@@ -34,7 +34,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="py-10 px-20 fixed top-0 left-0 w-full z-50">
+    <nav className="py-10 section-h-padding fixed top-0 left-0 w-full z-50">
       <div 
         onClick={openNav} className={`absolute top-4 left-0 cursor-pointer 
         ${isScrolled ? 'transition-opacity duration-700 ease-in-out opacity-100 z-10' 
@@ -56,7 +56,7 @@ const Navbar = () => {
         >
           <Link to="/" className="text-2xl px-6 h-full w-full flex items-center justify-center">Brent Ahrens</Link>
         </div>
-        <div className="flex items-center gap-14">
+        <div className="hidden lg:flex items-center gap-14">
           <div className="flex items-center border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer transition-all">
             <NavLink to="/work" className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-6 py-3 pr-10'>
               <p className="text-sm">Work</p>
