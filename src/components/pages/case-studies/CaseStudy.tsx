@@ -4,8 +4,7 @@ import { projects } from "../../../utils/projects";
 import ProjectListItem from "../../blocks/project-list-item";
 import Mobile from "../../blocks/mobile";
 import Desktop from "../../blocks/desktop";
-import WebsiteButton from '../../blocks/buttons/website-button';
-import CaseStudyButton from '../../blocks/buttons/case-study-button';
+import Button from '../../blocks/buttons/button';
 
 const CaseStudy = () => {
   const [ isDesktop, setIsDesktop ] = useState<boolean>(true);
@@ -52,7 +51,10 @@ const CaseStudy = () => {
                 transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
               <p className="text-sm">{isDesktop ? 'View Mobile' : 'View Desktop'}</p>
             </div>
-            <WebsiteButton url={project.url} />
+            <Button 
+              url={project.url} 
+              text='Website'
+            />
           </div>
         </div>
       </div>

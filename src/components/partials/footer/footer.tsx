@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { timeWithoutSeconds } from "../../../utils/time";
 import WeatherPopup from "../../blocks/weather-popup";
+import Button from "../../blocks/buttons/button";
 
 const Footer = () => {
   const [weatherOpen, setWeatherOpen] = useState<boolean>(false);
 
   return (
-    <footer className="h-screen w-full bg-black section-h-padding pt-24 pb-10 flex items-center justify-center">
+    <footer className="h-full md:h-screen w-full bg-black section-h-padding pt-24 pb-10 flex items-center justify-center">
       <div className="flex flex-col justify-between h-full w-full gap-7">
         <div>
           <div className="flex flex-col items-start">
@@ -32,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <div className="flex items-center justify-between gap-20 border rounded-full section-h-padding bg-offwhite cursor-pointer">
+          <div className="hidden sm:flex items-center justify-between sm:gap-20 border rounded-full section-h-padding bg-offwhite cursor-pointer">
             <Link to="/work" className="py-3">
               <p className="large-header text-black hover:text-nightblue hover:underline">Work</p>
             </Link>
@@ -43,12 +44,29 @@ const Footer = () => {
               <p className="large-header text-black hover:text-nightblue hover:underline">About</p>
             </Link>
           </div>
-          <div className="flex justify-center items-center gap-20 py-3 border-cta rounded-full section-h-padding bg-black cursor-pointer mt-12">
+          <div className="flex sm:hidden flex-col items-center justify-center gap-5 section-h-padding">
+            <Button
+             url="/work"
+             text="Work"
+             styles="bg-white w-full"
+            />
+            <Button
+             url="/services"
+             text="Services"
+             styles="bg-white w-full"
+            />
+            <Button
+             url="/about"
+             text="About"
+             styles="bg-white w-full"
+            />
+          </div>
+          <div className="hidden sm:flex justify-center items-center gap-20 py-3 border-cta rounded-full section-h-padding bg-black cursor-pointer mt-12">
             <div className="text-center">
               <p className="large-header text-white">Schedule a call</p>
             </div>
           </div>
-          <div className="flex items-center justify-between mt-24">
+          <div className="flex flex-col sm:flex-row items-center justify-between mt-16 sm:mt-24">
             <div>
               <p className="text-sm text-lightgray">©Studio Wozzie 2024</p>
             </div>

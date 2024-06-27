@@ -15,7 +15,7 @@ const Accordion = ({title, description}: accordionProps) => {
         className="accordion flex flex-col items-center justify-between section-h-padding py-8 border-b border-white"
       >
         <button className="flex items-center justify-between w-full pointer-events-none">
-          <p className="large-header text-white">{title}</p>
+          <p className="large-header text-white text-left">{title}</p>
           <div className={`w-11 h-11 rounded-full border border-white shrink-0 flex items-center justify-center relative p-2 rotate-45 cursor-pointer
             ${accordionOpen ? 'border-nightblue bg-nightblue' : 'border-white bg-transparent'}
           `}>

@@ -30,7 +30,7 @@ const FeaturedWork = () => {
             </div>
             <div className='flex flex-col justify-end lg:justify-between w-full mt-6'>
               <div>
-                <p className='text-2xl mb-[6px]'>Working Not Working</p>
+                <p className='text-xl sm:text-2xl mb-[6px]'>Working Not Working</p>
               </div>
               <div className='flex flex-row sm:flex-col lg:flex-row items-start lg:items-center lg:justify-between gap-5 mt-3 lg:mt-0'>
                 <Button url="www.workingnotworking.com" text="Website" />
@@ -56,7 +56,7 @@ const FeaturedWork = () => {
             </div>
             <div className='flex flex-col lg:flex-row lg:items-end justify-between w-full mt-6'>
               <div>
-                <p className='text-2xl mb-[6px]'>Young Arts</p>
+                <p className='text-xl sm:text-2xl mb-[6px]'>Young Arts</p>
                 <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
@@ -81,7 +81,7 @@ const FeaturedWork = () => {
             </div>
             <div className='flex flex-col lg:flex-row lg:items-end justify-between w-full mt-6'>
               <div>
-                <p className='text-2xl mb-[6px]'>Tempopay</p>
+                <p className='text-xl sm:text-2xl mb-[6px]'>Tempopay</p>
                 <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
@@ -93,7 +93,7 @@ const FeaturedWork = () => {
         </div>
       </div>
       <div className='w-52'>
-        <Button url="/work" text="View all work" hoverTextColor="text-nightblue" fontSize='text-2xl' bgColor="bg-offwhite" />
+        <Button url="/work" text="View all work" styles="hover:text-nightblue bg-offwhite" />
       </div>
     </div>
   );
