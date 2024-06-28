@@ -8,7 +8,7 @@ const Footer = () => {
   const [weatherOpen, setWeatherOpen] = useState<boolean>(false);
 
   return (
-    <footer className="h-full md:h-screen w-full bg-black section-h-padding pt-24 pb-10 flex items-center justify-center">
+    <footer className="h-full md:h-screen w-full bg-black section-h-padding pt-24 pb-10 flex items-center justify-center overflow-hidden">
       <div className="flex flex-col justify-between h-full w-full gap-7">
         <div>
           <div className="flex flex-col items-start">
@@ -22,13 +22,13 @@ const Footer = () => {
             </span>
             <h1 className="large-header text-white mt-12">Stay Connected</h1>
           </div>
-          <div className="flex items-end flex-wrap justify-between">
-            <p className="text-2xl text-white">Juankarlomfd@gmail.com</p>
-            <p className="text-2xl text-white px-3 py-1 border-cta border-white rounded-full w-28 mt-3 lg:mt-0">Submit</p>
+          <div className="flex items-end justify-between">
+            {/* <p className="text-2xl text-white">Juankarlomfd@gmail.com</p>
+            <p className="text-2xl text-white px-3 py-1 border-cta border-white rounded-full w-28 mt-3 lg:mt-0">Submit</p> */}
             <div className="mt-5 lg:mt-0">
-              <p className="text-2xl text-white">FAQ</p>
-              <p className="text-2xl text-white">Resume</p>
-              <p className="text-2xl text-white">brentholmesahrens@gmail.com</p>
+              <p className="text-base sm:text-2xl text-white">FAQ</p>
+              <p className="text-base sm:text-2xl text-white">Resume</p>
+              <p className="text-base sm:text-2xl text-white">brentholmesahrens@gmail.com</p>
             </div>
           </div>
         </div>

@@ -85,7 +85,13 @@ const Navbar = () => {
            bg-offwhite cursor-pointer transition-all ease-in-out hover:text-nightblue hover:underline 
           ${isNavOpen ? ' ml-8' : ''}`}
         >
-          <Link to="/" className="text-2xl px-6 h-full w-full flex items-center justify-center">Brent Ahrens</Link>
+          <Link 
+            onClick={() => setIsOverlayOpen(false)}
+            to="/" 
+            className="text-2xl px-6 h-full w-full flex items-center justify-center"
+          >
+            Brent Ahrens
+          </Link>
         </div>
         <div className="hidden lg:flex items-center gap-14">
           <div className="flex items-center border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer transition-all">
@@ -114,7 +120,7 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
-      <Overlay isOverlayOpen={isOverlayOpen} />
+      <Overlay isOverlayOpen={isOverlayOpen} setIsOverlayOpen={setIsOverlayOpen} />
     </nav>
   );
 };

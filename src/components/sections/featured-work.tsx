@@ -1,11 +1,8 @@
 import { useInView } from "react-intersection-observer";
-import { Link } from 'react-router-dom';
-import WebsiteButton from "../blocks/buttons/website-button";
 import Button from "../blocks/buttons/button";
 import youngarts from '../../assets/projects/youngarts/youngarts-desktop.png';
 import tempopay from '../../assets/projects/tempopay/tempopay-desktop.png';
 import wnw from '../../assets/projects/wnw/wnw-mobile.png';
-import CaseStudyButton from "../blocks/buttons/case-study-button";
 
 const FeaturedWork = () => {
   const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.5, rootMargin: '-100px' });
@@ -19,7 +16,7 @@ const FeaturedWork = () => {
           <p className="text-2xl mb-10 lg:mb-44">Featured Work</p>
           
           <div className="flex flex-col sm:flex-row lg:flex-col gap-0 sm:gap-6 lg:gap-0" ref={ref2}>
-            <div className="bg-nightblue border-4 border-nightblue rounded-[30px] h-[680px] lg:w-[315px] relative overflow-hidden pt-14">
+            <div className="bg-nightblue border-4 border-nightblue rounded-[30px] h-[600px] lg:w-[315px] relative overflow-hidden pt-14">
               <div className="absolute top-4 left-1/2 -translate-x-1/2 h-4 w-28 bg-white rounded-full"></div>
               <img 
                 className={`w-full transition-all duration-700 ${
