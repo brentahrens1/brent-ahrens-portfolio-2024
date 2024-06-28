@@ -7,7 +7,7 @@ type OverlayProps = {
 
 const Overlay = ({ isOverlayOpen, setIsOverlayOpen }: OverlayProps) => {
   return (
-    <div className={`flex fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black z-10 rounded-full ${isOverlayOpen ? 'transition-all duration-1000 h-screen w-full scale-150' : 'transition-all w-0 h-0 duration-1000'}`}>
+    <div className={`flex fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black rounded-full ${isOverlayOpen ? 'transition-all duration-1000 h-screen w-full scale-150 z-10 visible' : 'transition-all w-0 h-0 duration-1000 -z-10 invisible'}`}>
       <div className="flex flex-col items-center gap-14 w-full">
         <div className={`flex flex-col justify-center items-center cursor-pointer transition-all w-full h-full ${isOverlayOpen ? 'transition-all duration-1000 opacity-100 delay-300': 'transition-all duration-1000 opacity-0'}`}>
           <NavLink

@@ -22,6 +22,9 @@ import elyseWalkerMobile from '../assets/projects/elyse-walker/elyseWalkerMobile
 import elyseWalkerPreviewOne from '../assets/projects/elyse-walker/elyseWalkerPreviewOne.png'
 import elyseWalkerPreviewTwo from '../assets/projects/elyse-walker/elyseWalkerPreviewTwo.png'
 import superla from '../assets/projects/superla/superla-desktop.png';
+import gettingSmartDesktop from '../assets/projects/getting-smart/getting-smart-desktop.png';
+import muirDesktop from '../assets/projects/muir/muir-desktop.png';
+import checkerhallDesktop from '../assets/projects/checker-hall/checkerhall-desktop.png';
 
 export const projects = [
   {
@@ -95,7 +98,7 @@ export const projects = [
     slug: 'gettingsmart',
     tags: ['wordpress', 'tailwind', 'timber/twig'],
     featured: false,
-    desktop: wnwDesktop,
+    desktop: gettingSmartDesktop,
     mobile: wnwMobile,
     iframe: true
   },
@@ -125,7 +128,7 @@ export const projects = [
     slug: 'muir',
     tags: ['wordpress', 'tailwind', 'timber/twig'],
     featured: false,
-    desktop: wnwDesktop,
+    desktop: muirDesktop,
     mobile: wnwMobile,
     iframe: true
   },
@@ -155,7 +158,7 @@ export const projects = [
     slug: 'checkerhall',
     tags: ['webflow', 'javascript', 'css'],
     featured: false,
-    desktop: wnwDesktop,
+    desktop: checkerhallDesktop,
     mobile: wnwMobile,
     iframe: true
   },

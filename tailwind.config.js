@@ -24,7 +24,16 @@ module.exports = {
       },
       lineHeight: {
         '86': '86px'
-      }
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateY(-50%) translateX(10px)' },
+          '100%': { transform: 'translateY(-50%) translateX(-353px)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 10s linear infinite',
+      },
     },
   },
   plugins: [
