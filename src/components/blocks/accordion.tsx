@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import alien from '../../assets/alien.webp'
 
 type accordionProps = {
   title: string,
@@ -33,7 +32,6 @@ const Accordion = ({title, description}: accordionProps) => {
         <div className={`grid overflow-hidden transition-all ease-in-out h-0 ${
           accordionOpen ? 'grid-rows-[1fr] opacity-100 h-52 duration-500' : 'grid-rows-[0fr] opacity-0 duration-500'
         }`}>
-          <img className={` w-20 absolute left-2 transition-all ${accordionOpen ? ' top-3/4 duration-700' : ' top-0 duration-200 rotate-180'}`} src={alien} alt="alien" />
           <p className="text-white text-2xl text-left overflow-hidden min-h-52 flex items-end">{description}</p>
         </div>
       </div>

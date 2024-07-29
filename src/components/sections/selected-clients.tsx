@@ -8,7 +8,7 @@ const SelectedClients = () => {
   return (
     <div className='section-h-padding py-12 flex flex-col items-center justify-start'>
       <div className='w-52 mb-[120px]'>
-        <Button url="/work" text="View all work" styles='text-nightblue bg-offwhite' />
+        <Button url="/work" text="View all work" styles='hover:text-nightblue bg-offwhite' />
       </div>
       <p className='text-2xl mb-[100px] self-start'>Selected Clients</p>
       <div className='grid grid-cols-2 md:flex items-center gap-3 sm:gap-24 max-w-[1100px]'>
