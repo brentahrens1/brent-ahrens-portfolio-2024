@@ -22,12 +22,12 @@ const Faq = () => {
   return (
     <div className="bg-white py-20 flex flex-col gap-16">
       <div className="border-b py-12 border-black flex justify-start items-center">
-        <p className="text-2xl px-20">FAQ</p>
+        <p className="text-2xl section-h-padding">FAQ</p>
       </div>
       {
         faq.map((faqQuestion, id) => {
           return (
-            <div key={id} className="px-20">
+            <div key={id} className="section-h-padding">
               <p className="text-2xl m-6 ml-0">{faqQuestion.title}</p>
               <div className="flex items-center gap-6">
                 {

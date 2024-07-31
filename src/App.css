@@ -3,7 +3,11 @@
   text-decoration: underline;
 }
 
+.combined-transform {
+  @apply animate-marquee;
+  transform: translateY(-50%) translateX(10px);
+}
 
-
-/* Large header styling */
-/* text-4xl leading-[45px] md:text-5xl md:leading-[58px] xl:text-7xl xl:leading-86 */
+.combined-transform-animation {
+  animation: marquee 10s linear infinite;
+}

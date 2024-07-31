@@ -12,11 +12,11 @@ const Accordion = ({title, description}: accordionProps) => {
       <div 
         onMouseEnter={() => setAccordionOpen(!accordionOpen)}
         onMouseLeave={() => setAccordionOpen(!accordionOpen)}
-        className="accordion flex flex-col items-center justify-between px-20 py-8 border-b border-white"
+        className="accordion flex flex-col items-center justify-between section-h-padding py-8 border-b border-white relative"
       >
         <button className="flex items-center justify-between w-full pointer-events-none">
-          <p className="text-7xl text-white">{title}</p>
-          <div className={`w-11 h-11 rounded-full border border-white flex items-center justify-center relative p-2 rotate-45 cursor-pointer
+          <p className="large-header text-white text-left">{title}</p>
+          <div className={`w-11 h-11 rounded-full border border-white shrink-0 flex items-center justify-center relative p-2 rotate-45 cursor-pointer
             ${accordionOpen ? 'border-nightblue bg-nightblue' : 'border-white bg-transparent'}
           `}>
             <div 
@@ -29,8 +29,8 @@ const Accordion = ({title, description}: accordionProps) => {
             ></div>
           </div>
         </button>
-        <div className={`grid overflow-hidden transition-all duration-500 ease-in-out h-0 ${
-          accordionOpen ? 'grid-rows-[1fr] opacity-100 h-52' : 'grid-rows-[0fr] opacity-0'
+        <div className={`grid overflow-hidden transition-all ease-in-out h-0 ${
+          accordionOpen ? 'grid-rows-[1fr] opacity-100 h-52 duration-500' : 'grid-rows-[0fr] opacity-0 duration-500'
         }`}>
           <p className="text-white text-2xl text-left overflow-hidden min-h-52 flex items-end">{description}</p>
         </div>

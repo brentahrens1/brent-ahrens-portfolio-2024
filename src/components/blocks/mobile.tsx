@@ -1,6 +1,6 @@
 type mobileProps = {
   mobile: string,
-  title: string
+  title: string,
 }
 
 const Mobile = ({ mobile, title }: mobileProps) => {

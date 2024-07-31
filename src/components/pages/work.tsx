@@ -3,10 +3,10 @@ import { projects } from "../../utils/projects";
 
 const Work = () => {
   return (
-    <div className=" mt-52">
+    <div className="mt-52">
       <div className="flex items-center justify-between border-b border-black pb-5 gap-5">
-        <p className="text-2xl pl-20">Project List</p>
-        <p className="text-2xl w-[500px] pr-20">Year</p>
+        <p className="text-2xl section-h-padding">Project List</p>
+        <p className="text-2xl w-[500px] section-h-padding hidden lg:block">Year</p>
       </div>
       {
         projects.map(project => {

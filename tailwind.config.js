@@ -24,9 +24,66 @@ module.exports = {
       },
       lineHeight: {
         '86': '86px'
-      }
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateY(-50%) translateX(10px)' },
+          '100%': { transform: 'translateY(-50%) translateX(-353px)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 10s linear infinite',
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities, theme }) {
+      const newUtilities = {
+        '.large-header': {
+          fontSize: '36px',
+          lineHeight: '45px',
+          '@screen md': {
+            fontSize: '48px',
+            lineHeight: '58px',
+          },
+          '@screen xl': {
+            fontSize: '72px',
+            lineHeight: '86px',
+          },
+        },
+        '.section-h-padding': {
+          paddingRight: '18px',
+          paddingLeft: '18px',
+          '@screen md': {
+            paddingRight: '40px',
+            paddingLeft: '40px',
+          },
+          '@screen xl': {
+            paddingRight: '80px',
+            paddingLeft: '80px',
+          },
+        },
+        '.section-padding-l': {
+          paddingLeft: '18px',
+          '@screen md': {
+            paddingLeft: '40px',
+          },
+          '@screen xl': {
+            paddingLeft: '80px',
+          },
+        },
+        '.section-padding-r': {
+          paddingRight: '18px',
+          '@screen md': {
+            paddingRight: '40px',
+          },
+          '@screen xl': {
+            paddingRight: '80px',
+          },
+        },
+      }
 
+      addUtilities(newUtilities, ['responsive'])
+    },
+  ],
+}
