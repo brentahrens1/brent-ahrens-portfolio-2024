@@ -34,7 +34,7 @@ const SiteHeader = () => {
 
   return (
     <div className="w-full flex items-center justify-center h-screen section-h-padding">
-      <div className="large-header text-left w-full relative">
+      <div className="large-header text-left w-full relative hidden xl:block">
         Front-End developer, living<br /> in 
         <span
           onMouseEnter={() => setWeatherOpen(true)}
@@ -89,6 +89,62 @@ const SiteHeader = () => {
             </div>
           </Link>
         </div>
+      </div>
+      <div className=" text-4xl leading-[50px] sm:text-6xl sm:leading-[75px] md:text-7xl md:leading-[85px] text-left w-full relative block xl:hidden">
+        Front-End developer,<br /> living in 
+        <span
+          onMouseEnter={() => setWeatherOpen(true)}
+          onMouseLeave={() => setWeatherOpen(false)}
+          className="pl-6 relative"
+        >
+          Los Angeles<br /> (PST-{timeWithoutSeconds})<br />
+        </span>
+        creating and build<br /> functional
+        <div className="relative inline-block mr-6">
+          <Link
+            onMouseEnter={() => setButtonHovered(true)}
+            onMouseLeave={() => setButtonHovered(false)}
+            to="/work"
+            className="relative border drop-shadow-button rounded-full px-3 py-0 transition-all duration-200 ease-in-out 
+              hover:text-nightblue hover:underline bg-offwhite cursor-pointer z-10"
+          >
+            websites
+          </Link>
+          <div 
+            className={`flex flex-col items-center justify-center absolute left-1/2 -translate-x-1/2 transition-all z-0
+            ${buttonHovered ? 'bottom-full w-full origin-center duration-700' : 'bottom-0 w-0 origin-center duration-700'}`}
+          >
+            <img className={`w-[300px] transition-all duration-300`} src={currentProjectImage} alt="Project Image" />
+          </div>
+        </div>
+        <br />with trusted
+        <div className="group overflow-hidden relative inline-block mx-2 border drop-shadow-button rounded-full align-middle">
+          <Link
+            to="/services"
+            className="px-3 py-0 bg-offwhite cursor-pointer block
+              transition-all duration-200 ease-in-out hover:text-white hover:bg-nightblue"
+          >
+            <div className="group-hover:opacity-0 transition-all duration-100 h-10 sm:h-auto">Services</div>
+            <div 
+              className="combined-transform combined-transform-animation absolute top-1/2 left-0 w-100 flex items-center 
+                justify-start gap-2 transition-all duration-100 opacity-0 group-hover:opacity-100"
+            >
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="text-base uppercase">Development</p>
+                <p className="text-base uppercase">Consulting</p>
+                <p className="text-base uppercase">Design</p>
+                <p className="text-base uppercase">SEO</p>
+              </div>
+              <div className="flex items-center gap-3 shrink-0">
+                <p className="text-base uppercase">Development</p>
+                <p className="text-base uppercase">Consulting</p>
+                <p className="text-base uppercase">Design</p>
+                <p className="text-base uppercase">SEO</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <WeatherPopup weatherOpen={weatherOpen} />
       </div>
     </div>
   );

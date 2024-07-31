@@ -48,17 +48,17 @@ const Footer = () => {
             <Button
              url="/work"
              text="Work"
-             styles="bg-white w-full"
+             styles="bg-white w-full hover:text-nightblue"
             />
             <Button
              url="/services"
              text="Services"
-             styles="bg-white w-full"
+             styles="bg-white w-full hover:text-nightblue"
             />
             <Button
              url="/about"
              text="About"
-             styles="bg-white w-full"
+             styles="bg-white w-full hover:text-nightblue"
             />
           </div>
           <div className="hidden sm:flex justify-center items-center gap-20 py-3 border-cta rounded-full section-h-padding bg-black cursor-pointer mt-12">
