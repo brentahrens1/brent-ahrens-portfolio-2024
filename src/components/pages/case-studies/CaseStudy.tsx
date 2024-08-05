@@ -42,7 +42,7 @@ const CaseStudy = () => {
       }
       <div className="flex flex-col lg:flex-row items-start lg:items-center w-full justify-between mt-8 lg:mt-28 section-h-padding">
         <p className="large-header mb-3 lg:mb-0">{project.title}</p>
-        <div className="flex items-center justify-between lg:gap-20 lg:w-[500px]">
+        <div className="flex flex-col items-start gap-4 md:flex-row md:items-center justify-between lg:w-[500px]">
           <p className="text-projectSubText text-2xl">{project.year}</p>
           <div className="flex items-center gap-4">
             <div

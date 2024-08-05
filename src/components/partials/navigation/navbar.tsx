@@ -36,27 +36,6 @@ const Navbar = () => {
 
   return (
     <nav className="py-10 section-h-padding fixed top-0 left-0 w-full z-50">
-      {/* <div 
-        onClick={openNav} className={`absolute top-10 left-9 cursor-pointer 
-        ${isScrolled ? 'transition-opacity duration-700 ease-in-out opacity-100 z-10' 
-        : 'transition-left duration-200 ease-in-out opacity-0 -z-10'}`}
-      >
-        <div 
-          className='drop-shadow-button w-11 h-11 rounded-full bg-white gap-[6px] cursor-pointer 
-            hidden lg:flex flex-col items-center justify-center'
-        >
-          <div className='bg-black h-[2.5px] w-5'></div>
-          <div className='bg-black h-[2.5px] w-5'></div>
-          <div className='bg-black h-[2.5px] w-5'></div>
-        </div>
-      </div> */}
-      {/* <div
-        onClick={closeNav} 
-        className={`hidden md:block absolute top-10 cursor-pointer mr-12 
-        ${isNavOpen ? 'left-9' : '-left-full'}`}
-      >
-        <img src={close} alt="Close Icon" />
-      </div> */}
       <div 
         className={`flex items-center justify-between w-full relative`}
       >

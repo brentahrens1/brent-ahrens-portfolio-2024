@@ -14,7 +14,7 @@ const Accordion = ({title, description}: accordionProps) => {
         onMouseLeave={() => setAccordionOpen(!accordionOpen)}
         className="accordion flex flex-col items-center justify-between section-h-padding py-8 border-b border-white relative"
       >
-        <button className="flex items-center justify-between w-full pointer-events-none">
+        <button className="flex items-center justify-between gap-6 w-full pointer-events-none">
           <p className="large-header text-white text-left">{title}</p>
           <div className={`w-11 h-11 rounded-full border border-white shrink-0 flex items-center justify-center relative p-2 rotate-45 cursor-pointer
             ${accordionOpen ? 'border-nightblue bg-nightblue' : 'border-white bg-transparent'}
