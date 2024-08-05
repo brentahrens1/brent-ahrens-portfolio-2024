@@ -20,7 +20,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-white py-20 flex flex-col gap-16">
+    <div className="bg-white sm:py-20 flex flex-col sm:gap-16 pb-6 sm:pb-8">
       <div className="border-b py-12 border-black flex justify-start items-center">
         <p className="text-2xl section-h-padding">FAQ</p>
       </div>
@@ -29,7 +29,7 @@ const Faq = () => {
           return (
             <div key={id} className="section-h-padding">
               <p className="text-2xl m-6 ml-0">{faqQuestion.title}</p>
-              <div className="flex items-center gap-6">
+              <div className="flex items-start sm:items-center flex-col sm:flex-row gap-6">
                 {
                   faqQuestion.question.map((question, id) => {
                     return (
