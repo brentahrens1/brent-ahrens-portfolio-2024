@@ -1,8 +1,8 @@
 import { useInView } from "react-intersection-observer";
 import Button from "../blocks/buttons/button";
-import youngarts from '../../assets/projects/youngarts/youngarts-desktop.png';
 import tempopay from '../../assets/projects/tempopay/tempopay-desktop.png';
-import wnw from '../../assets/projects/wnw/wnw-mobile.png';
+import wnw from '../../assets/projects/wnw/wnwdesktop.png';
+import youngArtsMobile from '../../assets/projects/youngarts/youngarts-mobile.png'
 
 const FeaturedWork = () => {
   const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.5, rootMargin: '-100px' });
@@ -22,16 +22,16 @@ const FeaturedWork = () => {
                 className={`w-full transition-all duration-700 ${
                   inView2 ? 'opactiy-100' : 'opacity-0'
                 }`}
-                src={wnw} alt="Working Not Working" 
+                src={youngArtsMobile} alt="Working Not Working" 
               />
             </div>
             <div className='flex flex-col justify-end lg:justify-between w-full mt-6'>
               <div>
-                <p className='text-xl sm:text-2xl mb-[6px]'>Working Not Working</p>
+                <p className='text-xl sm:text-2xl mb-[6px]'>Young Arts</p>
               </div>
               <div className='flex flex-row sm:flex-col lg:flex-row items-start lg:items-center lg:justify-between gap-5 mt-3 lg:mt-0'>
-                <Button url="www.workingnotworking.com" text="Website" />
-                <Button url="/casestudy/workingnotworking" text="Case Study" />
+                <Button url="www.youngarts.org" text="Website" />
+                <Button url="/casestudy/youngarts" text="Case Study" />
               </div>
             </div>
           </div>
@@ -48,17 +48,17 @@ const FeaturedWork = () => {
                 className={`w-full transition-all duration-700 ${
                   inView1 ? 'opactiy-100' : 'opacity-0'
                 }`}
-                src={youngarts} alt="Young Arts Image"
+                src={wnw} alt="Young Arts Image"
               />
             </div>
             <div className='flex flex-col lg:flex-row lg:items-end justify-between w-full mt-6'>
               <div>
-                <p className='text-xl sm:text-2xl mb-[6px]'>Young Arts</p>
+                <p className='text-xl sm:text-2xl mb-[6px]'>Working Not Working</p>
                 <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
-                <Button url="www.youngarts.com" text="Website" />
-                <Button url="/casestudy/youngarts" text="Case Study" />
+              <Button text="Website" url="www.workingnotworking.com" target="_blank" />
+              <Button url="/casestudy/workingnotworking" text="Case Study" />
               </div>
             </div>
           </div>

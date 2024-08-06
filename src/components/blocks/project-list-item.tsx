@@ -37,7 +37,7 @@ const ProjectListItem = ({
         <div className="flex items-center justify-end lg:gap-24 section-h-padding">
           <p className="text-2xl text-projectSubText">{year}</p>
           <div className="flex items-center gap-4">
-            <Button styles="hover:text-nightblue" text="Website" url={url} />
+            <Button styles="hover:text-nightblue" text="Website" url={url} target="_blank" />
             <Button styles="hover:text-nightblue" text="Case Study" url={`/casestudy/${slug}`} />
           </div>
         </div>

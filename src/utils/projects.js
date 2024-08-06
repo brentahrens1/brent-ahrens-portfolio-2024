@@ -22,9 +22,14 @@ import elyseWalkerMobile from '../assets/projects/elyse-walker/elyseWalkerMobile
 import elyseWalkerPreviewOne from '../assets/projects/elyse-walker/elyseWalkerPreviewOne.png'
 import elyseWalkerPreviewTwo from '../assets/projects/elyse-walker/elyseWalkerPreviewTwo.png'
 import superla from '../assets/projects/superla/superla-desktop.png';
+import superlaPreviewOne from '../assets/projects/superla/superla-preview-1.png';
+import superlaPreviewTwo from '../assets/projects/superla/superla-preview-2.png';
 import gettingSmartDesktop from '../assets/projects/getting-smart/getting-smart-desktop.png';
 import muirDesktop from '../assets/projects/muir/muir-desktop.png';
+import muirPreviewOne from '../assets/projects/muir/muir-preview-1.png'
+import muirPreviewTwo from '../assets/projects/muir/muir-preview-2.png'
 import checkerhallDesktop from '../assets/projects/checker-hall/checkerhall-desktop.png';
+import checkerhallPreviewOne from '../assets/projects/checker-hall/checkerhall-preview-1.png';
 
 export const projects = [
   {
@@ -122,8 +127,8 @@ export const projects = [
     description: 'A Marriott Autograph Collection boutique hotel in Halifax, Nova Scotia.',
     year: '2022',
     url: 'https://muirhotel.com/',
-    previewImageOne: testOne,
-    previewImageTwo: testTwo,
+    previewImageOne: muirPreviewOne,
+    previewImageTwo: muirPreviewTwo,
     bgColor: 'rgb(165, 163, 167)',
     slug: 'muir',
     tags: ['wordpress', 'tailwind', 'timber/twig'],
@@ -137,8 +142,8 @@ export const projects = [
     description: 'A one-stop shop for all your real estate project needs.',
     year: '2024',
     url: 'https://www.super.la',
-    previewImageOne: testOne,
-    previewImageTwo: testTwo,
+    previewImageOne: superla,
+    previewImageTwo: superlaPreviewOne,
     bgColor: '#ca9a8e',
     slug: 'superla',
     tags: ['webflow', 'javascript', 'css', 'ecommerce'],
@@ -152,8 +157,8 @@ export const projects = [
     description: 'A neighborhood bar and restaurant in Highland Park, Los Angeles.',
     year: '2022',
     url: 'https://www.checkerhall.com/',
-    previewImageOne: testOne,
-    previewImageTwo: testTwo,
+    previewImageOne: checkerhallDesktop,
+    previewImageTwo: checkerhallPreviewOne,
     bgColor: 'rgb(123, 143, 127)',
     slug: 'checkerhall',
     tags: ['webflow', 'javascript', 'css'],
