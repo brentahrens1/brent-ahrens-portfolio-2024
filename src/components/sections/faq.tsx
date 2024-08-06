@@ -36,7 +36,7 @@ const Faq = () => {
                         key={id}
                         className={`px-6 py-3 border drop-shadow-button rounded-full cursor-pointer 
                           transition-all duration-200 ease-in-out hover:underline 
-                          ${id === indexClicked ?
+                          ${isAnswerOpen && id === indexClicked ?
                             'bg-nightblue text-white hover:text-white' : 
                             'bg-offwhite text-black hover:text-nightblue'
                           }

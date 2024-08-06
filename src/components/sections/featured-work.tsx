@@ -44,7 +44,7 @@ const FeaturedWork = () => {
                 <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
                 <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
               </div>
-              <img 
+              <img
                 className={`w-full transition-all duration-700 ${
                   inView1 ? 'opactiy-100' : 'opacity-0'
                 }`}
