@@ -26,7 +26,6 @@ const Footer = () => {
             {/* <p className="text-2xl text-white">Juankarlomfd@gmail.com</p>
             <p className="text-2xl text-white px-3 py-1 border-cta border-white rounded-full w-28 mt-3 lg:mt-0">Submit</p> */}
             <div className="mt-5 lg:mt-0">
-              <p className="text-base sm:text-2xl text-white">FAQ</p>
               <p className="text-base sm:text-2xl text-white">Resume</p>
               <p className="text-base sm:text-2xl text-white">brentholmesahrens@gmail.com</p>
             </div>

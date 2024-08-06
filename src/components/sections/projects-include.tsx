@@ -8,11 +8,13 @@ const ProjectsInclude = () => {
       </div>
       <div className="section-h-padding mb-6 sm:mt-36">
         <div className="flex flex-col gap-5 mt-7">
-          <p className="text-2xl">User-friendly no code content management with training.</p>
-          <p className="text-2xl">Deployment assistance.Development/Deployment consultation.</p>
-          <p className="text-2xl">UI/UX consultation.</p>
-          <p className="text-2xl">SEO analytics setup.</p>
-          <p className="text-2xl">Comprehensive QA & Testing.Onboarding technical support and maintenance.</p>
+          <p className="text-2xl">Modern and responsive web design.</p>
+          <p className="text-2xl">Modern and responsive web development.</p>
+          <p className="text-2xl">User-friendly content management system with training session and video tutorials.</p>
+          <p className="text-2xl">Design, Development, Deployment and Consultation</p>
+          <p className="text-2xl">UI/UX</p>
+          <p className="text-2xl">SEO Optimization</p>
+          <p className="text-2xl">Comprehensive QA & Testing. Technical support and maintenance.</p>
         </div>
       </div>
     </div>

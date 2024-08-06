@@ -9,7 +9,6 @@ const Services = () => {
       <Accordion title="Web Development" description="With our AIO service, we're able to handle one-off projects with a comprehensive package of consultation, design, development, and deployment." />
       <Accordion title="Design" description="With our AIO service, we're able to handle one-off projects with a comprehensive package of consultation, design, development, and deployment." />
       <Accordion title="Consulting" description="With our AIO service, we're able to handle one-off projects with a comprehensive package of consultation, design, development, and deployment." />
-      {/* <img className={` w-20 fixed left-2 transition-all ${accordionOpen ? ' top-3/4 duration-1000 rotate-0' : ' top-0 duration-200 rotate-180'}`} src={alien} alt="alien" /> */}
     </div>
   );
 };
