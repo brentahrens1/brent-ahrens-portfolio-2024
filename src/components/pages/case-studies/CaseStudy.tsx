@@ -67,6 +67,7 @@ const CaseStudy = () => {
               project.tags.map(tag => {
                 return (
                   <div
+                    key={tag}
                     className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
                       transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
                     <p className="text-sm">{tag}</p>

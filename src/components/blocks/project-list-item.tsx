@@ -34,7 +34,7 @@ const ProjectListItem = ({
           <h1 className="large-header mb-5">{title}</h1>
           <p className="text-2xl text-projectSubText max-w-[545px]">{description}</p>
         </div>
-        <div className="flex items-center justify-between lg:gap-24 section-h-padding w-full lg:w-[500px]">
+        <div className="flex items-center justify-end lg:gap-24 section-h-padding w-full">
           <p className="text-2xl text-projectSubText">{year}</p>
           <div className="flex items-center gap-4">
             <Button styles="hover:text-nightblue" text="Website" url={url} />
