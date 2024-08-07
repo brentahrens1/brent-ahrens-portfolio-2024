@@ -44,7 +44,7 @@ const SiteHeader = () => {
           <WeatherPopup weatherOpen={weatherOpen} />
           Los Angeles (PST-{timeWithoutSeconds})
         </span>
-        <br /> creating and build functional<br />
+        <br /> creating and building functional<br />
         <div className="relative inline-block mr-6">
           <Link
             onMouseEnter={() => setButtonHovered(true)}

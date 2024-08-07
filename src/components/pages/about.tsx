@@ -1,4 +1,5 @@
 import { workExperience } from "../../utils/work-experience";
+import Button from "../blocks/buttons/button";
 
 import profilePic from "../../assets/profile-pic.png";
 
@@ -33,6 +34,9 @@ const About = () => {
             )
           })
         }
+        <div className="py-20">
+          <Button text="Resume" target="_blank" url="/BrentAhrensResume.pdf" styles="hover:text-nightblue hover:underline" />
+        </div>
       </div>
     </div>
   );
