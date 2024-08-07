@@ -54,6 +54,7 @@ const CaseStudy = () => {
             <Button 
               url={project.url} 
               text='Website'
+              target='_blank'
             />
           </div>
         </div>
@@ -61,7 +62,7 @@ const CaseStudy = () => {
       <div className="self-start mt-12 section-h-padding">
         <p className="text-projectSubText text-2xl">{project.description}</p>
         <div className="flex items-center flex-wrap mt-12">
-          <p className="text-projectSubText text-2xl mr-5">Tags:</p>
+          <p className="text-projectSubText text-2xl mr-5">Tech:</p>
           <div className="flex items-center flex-wrap gap-5 mt-3 lg:mt-0">
             {
               project.tags.map(tag => {

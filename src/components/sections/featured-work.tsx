@@ -22,7 +22,7 @@ const FeaturedWork = () => {
                 className={`w-full transition-all duration-700 ${
                   inView2 ? 'opactiy-100' : 'opacity-0'
                 }`}
-                src={youngArtsMobile} alt="Working Not Working" 
+                src={youngArtsMobile} alt="Young Arts Project" 
               />
             </div>
             <div className='flex flex-col justify-end lg:justify-between w-full mt-6'>
@@ -54,7 +54,7 @@ const FeaturedWork = () => {
             <div className='flex flex-col lg:flex-row lg:items-end justify-between w-full mt-6'>
               <div>
                 <p className='text-xl sm:text-2xl mb-[6px]'>Working Not Working</p>
-                <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
+                <p className='text-sm text-projectSubText'>Website where hirers can find the top creative talent.</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
               <Button text="Website" url="www.workingnotworking.com" target="_blank" />

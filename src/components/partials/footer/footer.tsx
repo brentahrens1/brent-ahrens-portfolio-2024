@@ -60,9 +60,12 @@ const Footer = () => {
              styles="bg-white w-full hover:text-nightblue"
             />
           </div>
-          <div className="hidden sm:flex justify-center items-center gap-20 py-3 border-cta rounded-full section-h-padding bg-black cursor-pointer mt-12">
+          <div 
+            className="hidden sm:flex justify-center items-center gap-20 py-3 border-cta rounded-full transition-all duration-300 
+              section-h-padding bg-black cursor-pointer mt-12 hover:bg-nightblue hover:border-nightblue"
+          >
             <div className="text-center">
-              <p className="large-header text-white">Schedule a call</p>
+              <p className="large-header text-white">Contact</p>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-between mt-16 sm:mt-24">
