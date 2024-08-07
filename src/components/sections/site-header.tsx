@@ -57,7 +57,7 @@ const SiteHeader = () => {
           </Link>
           <div 
             className={`flex flex-col items-center justify-center absolute left-1/2 -translate-x-1/2 transition-all z-0
-            ${buttonHovered ? 'bottom-full w-full origin-center duration-700' : 'bottom-0 w-0 origin-center duration-700'}`}
+            ${buttonHovered ? 'bottom-full w-full origin-center duration-700' : ' bottom-8 w-0 origin-center duration-700'}`}
           >
             <img className={`w-[300px] transition-all duration-300`} src={currentProjectImage} alt="Project Image" />
           </div>
