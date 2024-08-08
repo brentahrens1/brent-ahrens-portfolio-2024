@@ -9,6 +9,7 @@ const SiteHeader = () => {
   const [buttonHovered, setButtonHovered] = useState<boolean>(false);
   const [currentProjectImage, setCurrentProjectImage] = useState<string>(projects[0].desktop);
   const [count, setCount] = useState<number>(0);
+  const [currentTime, setCurrentTime] = useState<string>("");
 
   useEffect(() => {
     let interval: NodeJS.Timeout | undefined;
@@ -32,6 +33,20 @@ const SiteHeader = () => {
     return () => clearTimeout(timeout);
   }, [count]);
 
+  useEffect(() => {
+    const updateCurrentTime = () => {
+      const now = new Date();
+      setCurrentTime(now.toLocaleTimeString());
+    };
+
+    updateCurrentTime();
+    const intervalId = setInterval(updateCurrentTime, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
   return (
     <div className="w-full flex items-center justify-center h-screen section-h-padding">
       <div className="text-[4.9vw] text-left text-nowrap w-full relative max-w-[1400px] hidden md:block">
@@ -42,7 +57,7 @@ const SiteHeader = () => {
           className="pl-6 relative"
         >
           <WeatherPopup weatherOpen={weatherOpen} />
-          Los Angeles (PST-{timeWithoutSeconds})
+          Los Angeles (PST-{currentTime})
         </span>
         <br /> creating and building functional<br />
         <div className="relative inline-block mr-6">
@@ -51,7 +66,7 @@ const SiteHeader = () => {
             onMouseLeave={() => setButtonHovered(false)}
             to="/work"
             className="relative border drop-shadow-button rounded-full px-7 py-1 transition-all duration-200 ease-in-out 
-              hover:text-nightblue hover:underline bg-offwhite cursor-pointer z-10"
+              hover:bg-nightblue hover:text-white bg-offwhite cursor-pointer z-10"
           >
             websites
           </Link>

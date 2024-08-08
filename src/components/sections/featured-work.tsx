@@ -90,7 +90,7 @@ const FeaturedWork = () => {
         </div>
       </div>
       <div className='w-52'>
-        <Button url="/work" text="View all work" styles="hover:text-nightblue bg-offwhite" />
+        <Button url="/work" text="View all work" styles="bg-offwhite hover:bg-nightblue hover:text-white hover:no-underline" />
       </div>
     </div>
   );
