@@ -38,7 +38,7 @@ const Faq = () => {
                           transition-all duration-200 ease-in-out hover:underline 
                           ${isAnswerOpen && id === indexClicked ?
                             'bg-nightblue text-white hover:text-white' : 
-                            'bg-offwhite text-black hover:text-nightblue'
+                            'bg-offwhite text-black hover:bg-nightblue hover:text-white hover:no-underline'
                           }
                         `}
                       >

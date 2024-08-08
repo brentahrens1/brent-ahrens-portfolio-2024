@@ -64,7 +64,7 @@ const Navbar = () => {
         }>
           <div 
             className={`flex items-center justify-center h-11 border drop-shadow-button rounded-3xl
-            bg-offwhite cursor-pointer transition-all ease-in-out hover:bg-nightblue hover:text-white`}
+            bg-offwhite cursor-pointer transition-all ease-in-out hover:bg-nightblue hover:text-white hover:border-nightblue`}
           >
             <Link 
               onClick={() => setIsOverlayOpen(false)}
@@ -78,17 +78,17 @@ const Navbar = () => {
             <div className="flex items-center border rounded-3xl drop-shadow-button bg-offwhite cursor-pointer transition-all overflow-hidden">
               <NavLink 
                 to="/work" 
-                className='transition-all duration-200 ease-in-out hover:bg-nightblue hover:text-white pl-6 py-3 pr-10'
+                className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-6 py-3 pr-10'
               >
                 <p className="text-sm">Work</p>
               </NavLink>
               <NavLink
-                to="/services" className='transition-all duration-200 ease-in-out hover:bg-nightblue hover:text-white py-3 px-10'>
+                to="/services" className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline py-3 px-10'>
                 <p className="text-sm">Services</p>
               </NavLink>
               <NavLink 
                 to="/about" 
-                className='transition-all duration-200 ease-in-out hover:bg-nightblue hover:text-white pl-10 pr-6 py-3'
+                className='transition-all duration-200 ease-in-out hover:text-nightblue hover:underline pl-10 pr-6 py-3'
               >
                 <p className="text-sm">About</p>
               </NavLink>

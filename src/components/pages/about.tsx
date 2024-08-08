@@ -10,7 +10,7 @@ const About = () => {
         <div className="overflow-hidden h-36 w-36 rounded-full shrink-0 float-left mr-6">
           <img className="w-full h-full object-cover" src={profilePic} alt="Brent Ahrens | Profile Pic" />
         </div>
-        <p className="text-white large-header max-w-[1108px]">
+        <p className="text-white large-header ">
           I'm a highly driven developer with full-stack experience and a passion for frontend.
           I thrive in energetic, creative, and collaborative environments where I can help to build great
           products and continue to grow.
@@ -35,7 +35,7 @@ const About = () => {
           })
         }
         <div className="py-20">
-          <Button text="Resume" target="_blank" url="/BrentAhrensResume.pdf" styles="hover:text-nightblue hover:underline" />
+          <Button text="Resume" target="_blank" url="/BrentAhrensResume.pdf" styles="hover:bg-nightblue hover:text-white hover:no-underline inline" />
         </div>
       </div>
     </div>
