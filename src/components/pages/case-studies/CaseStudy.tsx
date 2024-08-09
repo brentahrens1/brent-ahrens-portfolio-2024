@@ -16,11 +16,20 @@ const CaseStudy = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(true);
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      }
     };
-
+  
+    const checkInitialScroll = () => {
+      if (window.scrollY === 0) {
+        setIsScrolled(false);
+      }
+    };
+  
     window.addEventListener('scroll', handleScroll);
-
+    checkInitialScroll();
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
