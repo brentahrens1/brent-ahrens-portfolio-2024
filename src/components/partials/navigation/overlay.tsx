@@ -13,8 +13,8 @@ const Overlay = ({ isOverlayOpen, setIsOverlayOpen }: OverlayProps) => {
   const [weatherOpen, setWeatherOpen] = useState<boolean>(false);
 
   return (
-    <div className={`flex justify-center items-center ${isOverlayOpen ? 'visible' : 'invisible'}`}>
-      <div className={`flex fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black rounded-full ${isOverlayOpen ? 'transition-all duration-1000 h-screen w-full scale-150 z-10 visible' : 'transition-all w-0 h-0 duration-1000 -z-10 invisible'}`}>
+    <div className={`flex justify-center items-center ${isOverlayOpen ? 'visible h-[80vh] w-full' : 'invisible h-0 w-0 -z-20'}`}>
+      <div className={`flex fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black rounded-full ${isOverlayOpen ? 'transition-all duration-1000 h-[80vh] w-full scale-150 z-10 visible' : 'transition-all w-0 h-0 duration-1000 -z-10 invisible'}`}>
       </div>
       <div className={`h-full w-full py-10 flex items-center justify-center overflow-hidden z-20 relative transition-all max-w-[1200px] ${isOverlayOpen ? 'opacity-100 delay-700 duration-500' : 'opacity-0 duration-300'}`}>
         <div className="flex flex-col justify-between h-full w-full gap-7">
