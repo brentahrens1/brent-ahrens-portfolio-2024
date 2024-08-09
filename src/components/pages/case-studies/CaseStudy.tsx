@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../../../utils/projects";
 import ProjectListItem from "../../blocks/project-list-item";
@@ -10,6 +10,30 @@ const CaseStudy = () => {
   const [ isDesktop, setIsDesktop ] = useState<boolean>(true);
   const { slug } = useParams();
   const project = projects.find(p => p.slug === slug);
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  const overlayRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      }
+    };
+  
+    const checkInitialScroll = () => {
+      if (window.scrollY === 0) {
+        setIsScrolled(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    checkInitialScroll();
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -19,7 +43,7 @@ const CaseStudy = () => {
     <div className="mt-48 flex flex-col items-center justify-center">
       {
         project.iframe ?
-          <div className={`border-4 border-${project.bgColor} rounded-3xl overflow-hidden ${isDesktop ? 'mt-0' : '-mt-10'}`}>
+          <div className={`border-4 border-${project.bgColor} rounded-3xl overflow-hidden relative ${isDesktop ? 'mt-0' : '-mt-10'}`}>
             <iframe
               width={isDesktop ? '890' : '300'}
               height={isDesktop ? '504' : '544'}
@@ -29,6 +53,10 @@ const CaseStudy = () => {
               referrerPolicy="no-referrer-when-downgrade"
               src={project.url}>
             </iframe>
+            <div className={`absolute left-0 w-full h-full bg-black opacity-75 flex justify-center items-center flex-col gap-7 transition-all duration-700 ${isScrolled ? '-top-full' : 'top-0'}`}>
+              <p className=' text-4xl text-white'>Scroll</p>
+              <div className='border-2 border-white w-6 h-6 border-t-0 border-l-0 rotate-45 animate-bounce-rotate'></div>
+            </div>
           </div>
           :
           <div className="flex items-center justify-center section-h-padding">

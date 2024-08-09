@@ -30,9 +30,18 @@ module.exports = {
           '0%': { transform: 'translateY(-50%) translateX(10px)' },
           '100%': { transform: 'translateY(-50%) translateX(-353px)' },
         },
+        'bounce-rotate': {
+          '0%, 100%': {
+            transform: 'translateY(-25%) rotate(45deg)',
+          },
+          '50%': {
+            transform: 'translateY(0) rotate(45deg)',
+          },
+        },
       },
       animation: {
         marquee: 'marquee 10s linear infinite',
+        'bounce-rotate': 'bounce-rotate 1.5s infinite',
       },
     },
   },
