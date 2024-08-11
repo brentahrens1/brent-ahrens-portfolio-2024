@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { timeWithoutSeconds } from "../../utils/time";
 import WeatherPopup from "../blocks/weather-popup";
 import { projects } from "../../utils/projects";
@@ -7,31 +7,10 @@ import { projects } from "../../utils/projects";
 const SiteHeader = () => {
   const [weatherOpen, setWeatherOpen] = useState<boolean>(false);
   const [buttonHovered, setButtonHovered] = useState<boolean>(false);
-  const [currentProjectImage, setCurrentProjectImage] = useState<string>(projects[0].desktop);
-  const [count, setCount] = useState<number>(0);
+  const [animatedIndices, setAnimatedIndices] = useState<number[]>([]);
   const [currentTime, setCurrentTime] = useState<string>("");
-
-  useEffect(() => {
-    let interval: NodeJS.Timeout | undefined;
-
-    if (buttonHovered) {
-      interval = setInterval(() => {
-        setCount((prevCount) => (prevCount + 1) % projects.length);
-      }, 1100);
-    }
-
-    return () => {
-      if (interval) clearInterval(interval);
-    };
-  }, [buttonHovered]);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setCurrentProjectImage(projects[count].desktop);
-    }, 500);
-
-    return () => clearTimeout(timeout);
-  }, [count]);
+  const [pixelate, setPixelate] = useState<boolean>(false); // State to handle pixelate effect
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const updateCurrentTime = () => {
@@ -46,6 +25,42 @@ const SiteHeader = () => {
       clearInterval(intervalId);
     };
   }, []);
+
+  useEffect(() => {
+    let currentIndex = 0;
+
+    if (buttonHovered) {
+      setPixelate(false);
+
+      setAnimatedIndices([currentIndex]);
+      currentIndex += 1;
+
+      intervalRef.current = setInterval(() => {
+        setAnimatedIndices((prevIndices) => [...prevIndices, currentIndex]);
+        currentIndex += 1;
+
+        if (currentIndex >= projects.length) {
+          clearInterval(intervalRef.current!);
+        }
+      }, 5000);
+    } else {
+      setPixelate(true);
+
+      setTimeout(() => {
+        setAnimatedIndices([]);
+        if (intervalRef.current) {
+          clearInterval(intervalRef.current);
+        }
+        setPixelate(false);
+      }, 1000);
+    }
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [buttonHovered]);
 
   return (
     <div className="w-full flex items-center justify-center h-screen section-h-padding">
@@ -65,24 +80,34 @@ const SiteHeader = () => {
             onMouseEnter={() => setButtonHovered(true)}
             onMouseLeave={() => setButtonHovered(false)}
             to="/work"
-            className="relative border drop-shadow-button rounded-full px-7 py-1 transition-all duration-200 ease-in-out 
-              hover:bg-nightblue hover:text-white bg-offwhite cursor-pointer z-10"
+            className="relative border drop-shadow-button rounded-full px-7 py-1 transition-all duration-1000 ease-in-out 
+              hover:bg-nightblue hover:text-white bg-offwhite cursor-pointer z-20"
           >
             websites
           </Link>
-          <div 
-            className={`flex flex-col items-center justify-center absolute left-1/2 -translate-x-1/2 transition-all z-0
-            ${buttonHovered ? 'bottom-full w-full origin-center duration-700' : ' bottom-8 w-0 origin-center duration-700'}`}
-          >
-            <img className={`w-[300px] transition-all duration-300`} src={currentProjectImage} alt="Project Image" />
-          </div>
+          <div className="absolute left-0 h-[100px] -bottom-8 bg-white z-10 w-full"></div>
+          {
+            projects.map((project, index) => {
+              return (
+                <div 
+                  key={project.title}
+                  className={`flex flex-col items-center justify-center absolute left-1/2 
+                    -translate-x-1/2 top-5 transition-all duration-1000
+                    ${animatedIndices.includes(index) ? 'animate-image-rise' : ''}
+                    ${pixelate ? 'pixelate-effect' : ''}`}
+                >
+                  <img className={`w-[300px] transition-all duration-300`} src={project.desktop} alt={project.title} />
+                </div>
+              )
+            })
+          }
         </div>
         with trusted
         <span className="group py-1 relative ml-6 border drop-shadow-button rounded-full overflow-clip bg-offwhite hover:bg-nightblue">
           <Link
             to="/services"
             className=" inline-flex relative px-7 py-1 transition-all duration-200 ease-in-out 
-              hover:text-white hover:underline cursor-pointer z-10 overflow-clip max-w-[334px]"
+              hover:text-white hover:underline cursor-pointer z-10 overflow-clip"
           >
             <span className="group-hover:opacity-0 transition-all duration-100">Services</span>
             <div 

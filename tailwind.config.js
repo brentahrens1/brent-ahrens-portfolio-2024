@@ -38,10 +38,29 @@ module.exports = {
             transform: 'translateY(0) rotate(45deg)',
           },
         },
+        'image-rise': {
+          '0%': {
+            transform: 'translateY(0px) translateX(-50%) scale(1)',
+            opacity: 0
+          },
+          '5%': {
+            opacity: 1,
+          },
+          '40%': {
+            transform: 'translateY(-1000px) translateX(-50%) scale(5)'
+          },
+          '80%': {
+            transform: 'translateY(-2000px) translateX(-50%) scale(5)'
+          },
+          '100%': {
+            opacity: 0
+          },
+        },
       },
       animation: {
         marquee: 'marquee 10s linear infinite',
         'bounce-rotate': 'bounce-rotate 1.5s infinite',
+        'image-rise': 'image-rise 26s linear'
       },
     },
   },
@@ -90,9 +109,14 @@ module.exports = {
             paddingRight: '80px',
           },
         },
+        '.pixelate-effect': {
+          transform: 'scale(0.5) -translateX(-50%)',
+          opacity: 0,
+          transition: 'transform 500ms ease-out, filter 500ms ease-out, opacity 300ms ease-out',
+        },
       }
 
-      addUtilities(newUtilities, ['responsive'])
+      addUtilities(newUtilities, ['responsive', 'hover'])
     },
   ],
 }
