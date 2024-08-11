@@ -35,6 +35,21 @@ export const projects = [
   {
     title: 'Young Arts',
     description: 'with The National Foundation for the Advancement of Artists',
+    longDescription: <>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </>,
     year: '2022',
     url: 'https://www.youngarts.org/',
     previewImageOne: youngartsPreviewOne,
@@ -50,6 +65,21 @@ export const projects = [
   {
     title: 'Working Not Working',
     description: 'Website where hirers can find the top creative talent.',
+    longDescription: <>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </>,
     year: '2022',
     url: 'https://www.workingnotworking.com/',
     previewImageOne: wnwPreviewOne,
@@ -65,6 +95,21 @@ export const projects = [
   {
     title: 'Tempopay',
     description: 'A company dedicated to make managing healthcare costs simple.',
+    longDescription: <>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </>,
     year: '2022',
     url: 'https://www.tempopay.com/',
     previewImageOne: tempopayPreviewOne,
@@ -80,6 +125,21 @@ export const projects = [
   {
     title: 'Ace Hotel',
     description: 'A chain of boutique hotels with locations across the country and abroad.',
+    longDescription: <>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </>,
     year: '2022',
     url: 'https://acehotel.com/',
     previewImageOne: acePreviewOne,
@@ -95,6 +155,21 @@ export const projects = [
   {
     title: 'Getting Smart',
     description: 'Explore and highlight innovations in learning to empower all people to build capacity to thrive and steward in a complex and uncertain future.',
+    longDescription: <>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </>,
     year: '2022',
     url: 'https://www.gettingsmart.com/',
     previewImageOne: gettingSmartPreviewOne,
@@ -110,6 +185,21 @@ export const projects = [
   {
     title: 'Elyse Walker',
     description: 'Styling for real life, luxury for every day.',
+    longDescription: <>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </>,
     year: '2022',
     url: 'https://elysewalker.com/',
     previewImageOne: elyseWalkerPreviewOne,
@@ -125,6 +215,21 @@ export const projects = [
   {
     title: 'Muir',
     description: 'A Marriott Autograph Collection boutique hotel in Halifax, Nova Scotia.',
+    longDescription: <>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+      ullamco laboris nisi ut aliquip
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </>,
     year: '2022',
     url: 'https://muirhotel.com/',
     previewImageOne: muirPreviewOne,
@@ -140,6 +245,21 @@ export const projects = [
   {
     title: 'Super LA',
     description: 'A one-stop shop for all your real estate project needs.',
+    longDescription: <>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+        ullamco laboris nisi ut aliquip
+      </p>
+      <p>
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+      </>,
     year: '2024',
     url: 'https://www.super.la',
     previewImageOne: superla,
@@ -155,6 +275,21 @@ export const projects = [
   {
     title: 'Checker Hall',
     description: 'A neighborhood bar and restaurant in Highland Park, Los Angeles.',
+    longDescription: <>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+        ullamco laboris nisi ut aliquip
+      </p>
+      <p>
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+      </>,
     year: '2022',
     url: 'https://www.checkerhall.com/',
     previewImageOne: checkerhallDesktop,
