@@ -88,7 +88,7 @@ const CaseStudy = () => {
         </div>
       </div>
       <div className="self-start mt-12 section-h-padding">
-        <p className="text-projectSubText text-2xl">{project.description}</p>
+        <div className="text-projectSubText text-2xl flex flex-col gap-6">{project.longDescription}</div>
         <div className="flex items-center flex-wrap mt-12">
           <p className="text-projectSubText text-2xl mr-5">Tech:</p>
           <div className="flex items-center flex-wrap gap-5 mt-3 lg:mt-0">

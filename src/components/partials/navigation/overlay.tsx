@@ -16,9 +16,9 @@ const Overlay = ({ isOverlayOpen, setIsOverlayOpen }: OverlayProps) => {
     <div className={`flex justify-center items-center ${isOverlayOpen ? 'visible h-[80vh] w-full' : 'invisible h-0 w-0 -z-20'}`}>
       <div className={`flex fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black rounded-full ${isOverlayOpen ? 'transition-all duration-1000 h-[80vh] w-full scale-150 z-10 visible' : 'transition-all w-0 h-0 duration-1000 -z-10 invisible'}`}>
       </div>
-      <div className={`h-full w-full py-10 flex items-center justify-center overflow-hidden z-20 relative transition-all max-w-[1200px] ${isOverlayOpen ? 'opacity-100 delay-700 duration-500' : 'opacity-0 duration-300'}`}>
+      <div className={`h-full w-full py-10 flex items-center justify-center overflow-hidden z-20 relative transition-all max-w-[1200px]`}>
         <div className="flex flex-col justify-between h-full w-full gap-7">
-          <div>
+          <div className={`transition-all duration-1000 ${isOverlayOpen ? 'translate-y-0 delay-700 opacity-100' : '-translate-y-full opacity-0'}`}>
             <div className="flex flex-col items-start">
               <span
                 onMouseEnter={() => setWeatherOpen(true)}
@@ -39,7 +39,7 @@ const Overlay = ({ isOverlayOpen, setIsOverlayOpen }: OverlayProps) => {
               </div>
             </div>
           </div>
-          <div>
+          <div className={`transition-all duration-1000 ${isOverlayOpen ? 'translate-y-0 delay-700 opacity-100' : 'translate-y-full opacity-0'}`}>
             <div className="hidden sm:flex items-center justify-between sm:gap-20 border rounded-full section-h-padding bg-offwhite cursor-pointer">
               <Link to="/work" className="py-3">
                 <p className=" text-3xl text-black hover:text-nightblue hover:underline">Work</p>
