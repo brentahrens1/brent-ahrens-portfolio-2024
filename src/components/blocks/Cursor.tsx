@@ -43,7 +43,7 @@ const CustomCursor: React.FC<{ active: boolean }> = ({ active }) => {
     borderRadius: '50%',
     pointerEvents: 'none',
     transform: `translate(-50%, -50%) scale(${isOverText ? 5.5 : 1})`,
-    transition: 'transform 0.2s ease-in-out',
+    transition: 'transform 1s ease-in-out',
     zIndex: 9999,
     mixBlendMode: 'difference',
     color: 'white',
