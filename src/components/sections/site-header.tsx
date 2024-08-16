@@ -65,7 +65,7 @@ const SiteHeader = () => {
   return (
     <div className="w-full flex items-center justify-center h-screen section-h-padding">
       <div className="text-[4.9vw] text-left text-nowrap w-full relative max-w-[1400px] hidden md:block">
-        Front-End developer, living<br /> in 
+        Front-End Engineer, living<br /> in 
         <span
           onMouseEnter={() => setWeatherOpen(true)}
           onMouseLeave={() => setWeatherOpen(false)}
