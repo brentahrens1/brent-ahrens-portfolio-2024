@@ -111,11 +111,10 @@ const CaseStudy = () => {
       {
         projects.map(project => {
           return (
-            <>
+            <div key={project.title}>
                 {
                   project.featured ?
                   <ProjectListItem
-                    key={project.title}
                     title={project.title}
                     description={project.description}
                     year={project.year}
@@ -128,7 +127,7 @@ const CaseStudy = () => {
                   :
                   null
                 }
-            </>
+            </div>
           )
         })
       }

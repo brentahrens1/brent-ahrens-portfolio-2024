@@ -61,8 +61,9 @@ const Faq = () => {
               className={`flex items-start bg-black fixed left-0 w-full px-24 py-12 min-h-[50vh] z-10 transition-all duration-1000
               ${isAnswerOpen ? 'bottom-0' : '-bottom-full'}`}
             >
-              <div onClick={handleAnswerClose} className={`absolute top-7 left-7 cursor-pointer mr-12'}`}>
-                <img src={close} alt="Close Icon" />
+              <div onClick={handleAnswerClose} className={`absolute top-7 left-7 cursor-pointer mr-12 rounded-full w-11 h-11 bg-white'}`}>
+                <div className={`h-[2.5px] w-5 bg-black absolute top-5 left-1/2 duration-[2s] ${isAnswerOpen ? '-translate-x-1/2 rotate-45' : '-translate-x-1/2 -rotate-45'}`}></div>
+                <div className={`h-[2.5px] w-5 bg-black absolute top-5 left-1/2 duration-[2s] ${isAnswerOpen ? '-translate-x-1/2 -rotate-45' : '-translate-x-1/2 rotate-45'}`}></div>
               </div>
               <p className="text-2xl text-white">{faqAnswer.answers[indexClicked]}</p>
             </div>
