@@ -31,8 +31,6 @@ const Overlay = ({ isOverlayOpen, setIsOverlayOpen }: OverlayProps) => {
               <h1 className=" text-3xl text-white mt-12">Stay Connected</h1>
             </div>
             <div className="flex items-end justify-between">
-              {/* <p className="text-2xl text-white">Juankarlomfd@gmail.com</p>
-              <p className="text-2xl text-white px-3 py-1 border-cta border-white rounded-full w-28 mt-3 lg:mt-0">Submit</p> */}
               <div className="mt-5 lg:mt-0">
                 <a href="/BrentAhrensResume.pdf" className="text-base sm:text-2xl text-white" target="_blank">Resume</a>
                 <p className="text-base sm:text-2xl text-white">brentholmesahrens@gmail.com</p>
@@ -41,32 +39,53 @@ const Overlay = ({ isOverlayOpen, setIsOverlayOpen }: OverlayProps) => {
           </div>
           <div className={`transition-all duration-1000 ${isOverlayOpen ? 'translate-y-0 delay-700 opacity-100' : 'translate-y-full opacity-0'}`}>
             <div className="hidden sm:flex items-center justify-between sm:gap-20 border rounded-full section-h-padding bg-offwhite cursor-pointer">
-              <Link to="/work" className="py-3">
+              <Link 
+                to="/work" 
+                className="py-3"
+                onClick={() => setIsOverlayOpen(!isOverlayOpen)}
+
+
+
+              >
                 <p className=" text-3xl text-black hover:text-nightblue hover:underline">Work</p>
               </Link>
-              <Link to="/services" className="py-3">
+              <Link 
+                to="/services" 
+                className="py-3"
+                onClick={() => setIsOverlayOpen(!isOverlayOpen)}
+              >
                 <p className=" text-3xl text-black hover:text-nightblue hover:underline">Services</p>
               </Link>
-              <Link to="/about" className="py-3">
+              <Link 
+                to="/about" 
+                className="py-3"
+                onClick={() => setIsOverlayOpen(!isOverlayOpen)}
+              >
                 <p className=" text-3xl text-black hover:text-nightblue hover:underline">About</p>
               </Link>
             </div>
             <div className="flex sm:hidden flex-col items-center justify-center gap-5 section-h-padding">
-              <Button
-              url="/work"
-              text="Work"
-              styles="bg-white w-full hover:text-nightblue"
-              />
-              <Button
-              url="/services"
-              text="Services"
-              styles="bg-white w-full hover:text-nightblue"
-              />
-              <Button
-              url="/about"
-              text="About"
-              styles="bg-white w-full hover:text-nightblue"
-              />
+              <div className="w-full" onClick={() => setIsOverlayOpen(!isOverlayOpen)}>
+                <Button
+                url="/work"
+                text="Work"
+                styles="bg-white w-full hover:text-nightblue"
+                />
+              </div>
+              <div className="w-full" onClick={() => setIsOverlayOpen(!isOverlayOpen)}>
+                <Button
+                url="/services"
+                text="Services"
+                styles="bg-white w-full hover:text-nightblue"
+                />
+              </div>
+              <div className="w-full" onClick={() => setIsOverlayOpen(!isOverlayOpen)}>
+                <Button
+                url="/about"
+                text="About"
+                styles="bg-white w-full hover:text-nightblue"
+                />
+              </div>
             </div>
             <div 
               className="hidden sm:flex justify-center items-center gap-20 py-3 border-cta rounded-full transition-all duration-300 

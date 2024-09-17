@@ -9,7 +9,7 @@ const SiteHeader = () => {
   const [buttonHovered, setButtonHovered] = useState<boolean>(false);
   const [animatedIndices, setAnimatedIndices] = useState<number[]>([]);
   const [currentTime, setCurrentTime] = useState<string>("");
-  const [pixelate, setPixelate] = useState<boolean>(false); // State to handle pixelate effect
+  const [pixelate, setPixelate] = useState<boolean>(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -130,7 +130,7 @@ const SiteHeader = () => {
           </Link>
         </span>
       </div>
-      <div className="text-[7.3vw] text-left text-nowrap w-full relative max-w-[1400px] md:hidden">
+      <div className="text-[7.3vw] leading-[56px] sm:leading-[85px] text-left text-nowrap w-full relative max-w-[1400px] md:hidden">
         <WeatherPopup weatherOpen={weatherOpen} />
         Front-End developer, <br /> living in 
         <span

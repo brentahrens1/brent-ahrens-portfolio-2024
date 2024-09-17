@@ -8,16 +8,6 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [isOverlayOpen, setIsOverlayOpen] = useState<boolean>(false);
 
-  const openNav = () => {
-    setIsNavOpen(true);
-    setIsScrolled(false);
-  };
-
-  const closeNav = () => {
-    setIsNavOpen(false);
-    setIsScrolled(true);
-  }
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50 && !isNavOpen && window.innerWidth > 1024) {
@@ -41,7 +31,7 @@ const Navbar = () => {
       >
         <div 
           onClick={() => setIsOverlayOpen(!isOverlayOpen)} 
-          className={`drop-shadow-button w-11 h-11 rounded-full bg-white gap-[6px] cursor-pointer z-50
+          className={`drop-shadow-button w-11 h-11 min-w-11 min-h-11 rounded-full bg-white gap-[6px] cursor-pointer z-50
             flex-col items-center justify-center overflow-hidden ${isScrolled ? 'flex -translate-x-6 xl:-translate-x-14' : 'flex lg:hidden'}`}
           >
           <div

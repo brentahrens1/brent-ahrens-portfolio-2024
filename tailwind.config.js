@@ -68,8 +68,12 @@ module.exports = {
     function ({ addUtilities, theme }) {
       const newUtilities = {
         '.large-header': {
-          fontSize: '36px',
-          lineHeight: '45px',
+          fontSize: '27px',
+          lineHeight: '34px',
+          '@screen sm': {
+            fontSize: '36px',
+            lineHeight: '45px',
+          },
           '@screen md': {
             fontSize: '48px',
             lineHeight: '58px',

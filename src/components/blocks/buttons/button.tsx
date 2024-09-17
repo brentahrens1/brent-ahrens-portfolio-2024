@@ -4,7 +4,7 @@ type buttonProps = {
   text: string,
   url?: string,
   target?: string,
-  styles?: string
+  styles?: string,
 }
 
 const Button = (

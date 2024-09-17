@@ -33,11 +33,10 @@ const About = () => {
 
   return (
     <div className="bg-black flex justify-center items-center flex-col">
-      {/* CustomCursor is only active within the specified section */}
       <CustomCursor active={isCursorActive} />
       
-      <div ref={sectionRef} className="section-h-padding pt-52 pb-24 bg-black after:clear-both after:table">
-        <div className="overflow-hidden h-36 w-36 rounded-full shrink-0 float-left mr-6">
+      <div ref={sectionRef} className="flex flex-col md:flex-row items-start gap-6 section-h-padding pt-52 pb-24 bg-black">
+        <div className="overflow-hidden h-36 w-36 rounded-full shrink-0">
           <img className="w-full h-full object-cover" src={profilePic} alt="Brent Ahrens | Profile Pic" />
         </div>
         <div className="text-white large-header flex flex-wrap gap-x-4">
@@ -82,9 +81,9 @@ const About = () => {
         {
           workExperience.map(experience => (
             <div key={experience.title} className="py-10 border-t border-black">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <h1 className="large-header">{experience.title}</h1>
-                <p className="text-2xl text-projectSubText">{experience.years}</p>
+                <p className="text-xl sm:text-2xl text-projectSubText min-w-[120px]">{experience.years}</p>
               </div>
               <p className="text-2xl text-projectSubText mt-5">{experience.company}</p>
               <div className="text-2xl text-projectSubText mt-5 max-w-3xl">
