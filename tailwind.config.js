@@ -46,15 +46,12 @@ module.exports = {
           '5%': {
             opacity: 1,
           },
-          '40%': {
-            transform: 'translateY(-1000px) translateX(-50%) scale(5)'
+          '65%': {
+            transform: 'translateY(-1000px) translateX(100px) scale(10)'
           },
           '80%': {
-            transform: 'translateY(-2000px) translateX(-50%) scale(5)'
-          },
-          '100%': {
-            opacity: 0
-          },
+            transform: 'translateY(-2000px) translateX(1000px) scale(10)'
+          }
         },
       },
       animation: {
