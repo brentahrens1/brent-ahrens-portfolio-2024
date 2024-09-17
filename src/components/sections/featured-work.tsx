@@ -30,7 +30,7 @@ const FeaturedWork = () => {
                 <p className='text-xl sm:text-2xl mb-[6px]'>Young Arts</p>
               </div>
               <div className='flex flex-row sm:flex-col lg:flex-row items-start lg:items-center lg:justify-between gap-5 mt-3 lg:mt-0'>
-                <Button styles="hover:text-nightblue hover:underline" url="www.youngarts.org" text="Website" />
+                <Button styles="hover:text-nightblue hover:underline" url="https://www.youngarts.org" text="Website" target="_blank" />
                 <Button styles="hover:text-nightblue hover:underline" url="/casestudy/youngarts" text="Case Study" />
               </div>
             </div>
@@ -57,7 +57,7 @@ const FeaturedWork = () => {
                 <p className='text-sm text-projectSubText'>Website where hirers can find the top creative talent.</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
-              <Button styles="hover:text-nightblue hover:underline" text="Website" url="www.workingnotworking.com" target="_blank" />
+              <Button styles="hover:text-nightblue hover:underline" text="Website" url="https://www.workingnotworking.com" target="_blank" />
               <Button styles="hover:text-nightblue hover:underline" url="/casestudy/workingnotworking" text="Case Study" />
               </div>
             </div>
@@ -82,7 +82,7 @@ const FeaturedWork = () => {
                 <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
-                <Button styles="hover:text-nightblue hover:underline" url="www.tempopay.com" text="Website" />
+                <Button styles="hover:text-nightblue hover:underline" url="https://www.tempopay.com" text="Website" target="_blank" />
                 <Button styles="hover:text-nightblue hover:underline" url="/casestudy/tempopay" text="Case Study" />
               </div>
             </div>
