@@ -65,8 +65,8 @@ const Faq = () => {
                onClick={handleAnswerClose} 
                className={`absolute top-7 left-7 cursor-pointer mr-12 rounded-full w-11 h-11 bg-white`}
               >
-                <div className={`h-[2.5px] w-5 bg-black absolute top-[40%] left-1/2 duration-500 -translate-x-1/2 -translate-y-1/2 ${isAnswerOpen ? 'rotate-[135deg] top-[50%] delay-[1s]' : ''}`}></div>
-                <div className={`h-[2.5px] w-5 bg-black absolute top-[60%] left-1/2 duration-500 -translate-x-1/2 -translate-y-1/2 ${isAnswerOpen ? '-rotate-[135deg] top-[50%] delay-[1s]' : ''}`}></div>
+                <div className={`h-[2.5px] w-5 bg-black absolute left-1/2 duration-500 -translate-x-1/2 -translate-y-1/2 ${isAnswerOpen ? 'rotate-[135deg] top-[50%] delay-[1s]' : 'top-[40%]'}`}></div>
+                <div className={`h-[2.5px] w-5 bg-black absolute left-1/2 duration-500 -translate-x-1/2 -translate-y-1/2 ${isAnswerOpen ? '-rotate-[135deg] top-[50%] delay-[1s]' : 'top-[60%]'}`}></div>
               </div>
               <p className="text-2xl text-white">{faqAnswer.answers[indexClicked]}</p>
             </div>
