@@ -1,5 +1,3 @@
-import testOne from '../assets/projects/test-1.png';
-import testTwo from '../assets/projects/test-2.png';
 import wnwDesktop from '../assets/projects/wnw/wnwdesktop.png';
 import wnwMobile from '../assets/projects/wnw/wnw-mobile.png';
 import wnwPreviewOne from '../assets/projects/wnw/wnw-preview-1.png'

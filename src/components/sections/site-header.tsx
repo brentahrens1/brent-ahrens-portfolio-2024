@@ -48,7 +48,7 @@ const SiteHeader = () => {
         if (intervalRef.current) {
           clearInterval(intervalRef.current);
         }
-      }, 2000);
+      }, 700);
     }
 
     return () => {
@@ -92,7 +92,7 @@ const SiteHeader = () => {
                     ${animatedIndices.includes(index) ? 'animate-image-rise' : ''}
                   `}
                 >
-                  <img className={`w-[300px] transition-all duration-[2s] ${buttonHovered ? 'opacity-100' : 'opacity-0'}`} src={project.desktop} alt={project.title} />
+                  <img className={`w-[300px] transition-all duration-[.7s] ${buttonHovered ? 'opacity-100' : 'opacity-0'}`} src={project.desktop} alt={project.title} />
                 </div>
               )
             })
