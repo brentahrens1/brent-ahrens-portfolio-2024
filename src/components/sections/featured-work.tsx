@@ -79,7 +79,7 @@ const FeaturedWork = () => {
             <div className='flex flex-col lg:flex-row lg:items-end justify-between w-full mt-6'>
               <div>
                 <p className='text-xl sm:text-2xl mb-[6px]'>Tempopay</p>
-                <p className='text-sm text-projectSubText'>with The National Foundation for the Advancement of Artists</p>
+                <p className='text-sm text-projectSubText'>Website for a company makes managing healthcare costs simple.</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
                 <Button styles="hover:text-nightblue hover:underline" url="https://www.tempopay.com" text="Website" target="_blank" />
