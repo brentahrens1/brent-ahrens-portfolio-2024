@@ -110,11 +110,6 @@ module.exports = {
             paddingRight: '80px',
           },
         },
-        '.pixelate-effect': {
-          transform: 'scale(0.5) -translateX(-50%)',
-          opacity: 0,
-          transition: 'transform 500ms ease-out, filter 500ms ease-out, opacity 300ms ease-out',
-        },
       }
 
       addUtilities(newUtilities, ['responsive', 'hover'])

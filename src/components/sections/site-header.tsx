@@ -9,7 +9,6 @@ const SiteHeader = () => {
   const [buttonHovered, setButtonHovered] = useState<boolean>(false);
   const [animatedIndices, setAnimatedIndices] = useState<number[]>([]);
   const [currentTime, setCurrentTime] = useState<string>("");
-  const [pixelate, setPixelate] = useState<boolean>(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -30,7 +29,6 @@ const SiteHeader = () => {
     let currentIndex = 0;
 
     if (buttonHovered) {
-      setPixelate(false);
 
       setAnimatedIndices([currentIndex]);
       currentIndex += 1;
@@ -44,15 +42,13 @@ const SiteHeader = () => {
         }
       }, 5000);
     } else {
-      setPixelate(true);
 
       setTimeout(() => {
         setAnimatedIndices([]);
         if (intervalRef.current) {
           clearInterval(intervalRef.current);
         }
-        setPixelate(false);
-      }, 1000);
+      }, 2000);
     }
 
     return () => {
@@ -94,9 +90,9 @@ const SiteHeader = () => {
                   className={`flex flex-col items-center justify-center absolute left-1/2 
                     -translate-x-1/2 top-5 transition-all duration-1000
                     ${animatedIndices.includes(index) ? 'animate-image-rise' : ''}
-                    ${pixelate ? 'pixelate-effect' : ''}`}
+                  `}
                 >
-                  <img className={`w-[300px] transition-all duration-300`} src={project.desktop} alt={project.title} />
+                  <img className={`w-[300px] transition-all duration-[2s] ${buttonHovered ? 'opacity-100' : 'opacity-0'}`} src={project.desktop} alt={project.title} />
                 </div>
               )
             })
