@@ -10,7 +10,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App font-fkgrotesk">
+    <div className="App font-fkgrotesk overflow-x-hidden">
       <Navbar />
       <Routes>
         <Route index element={<Home />} />

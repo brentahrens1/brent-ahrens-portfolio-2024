@@ -32,11 +32,9 @@ import checkerhallPreviewOne from '../assets/projects/checker-hall/checkerhall-p
 export const projects = [
   {
     title: 'Young Arts',
-    description: 'with The National Foundation for the Advancement of Artists',
+    description: 'An annual workshop that supports artists across 10 disciplines at all stages of development.',
     longDescription: <>
-    <p><span className=' text-black font-bold'>The website:</span> This is a website by Frank LaRocca Studios that I had the privilege of working on. 
-       Implementing a custom Wordpress theme using Timber/Twig as well as PHP, SCSS, Javascript, Tailwind 
-       and ACF to help bring to life a design from the legendary design agency Pentagram.
+    <p><span className=' text-black font-bold'>The website:</span> I worked as a Frontend Engineer is collaboration with Studio LaRocca. The Young Arts website was designed by the legendary design studio Pentagram.
     </p>
     <p>
       <span className=' text-black font-bold'>The company:</span> For many young people, applying to YoungArts may be the first step in affirming “I am an artist.”
@@ -51,7 +49,7 @@ export const projects = [
     previewImageTwo: youngartsPreviewTwo,
     bgColor: '#3DC3FC',
     slug: 'youngarts',
-    tags: ['wordpress', 'tailwind', 'timber/twig'],
+    tags: ['Wordpress', 'Tailwind', 'Timber/Twig', 'Figma'],
     featured: true,
     desktop: youngartsDesktop,
     mobile: youngartsMobile,
@@ -59,16 +57,10 @@ export const projects = [
   },
   {
     title: 'Working Not Working',
-    description: 'Website where hirers can find the top creative talent.',
+    description: 'A job board where companies can find the top creative talent.',
     longDescription: <>
-      <p><span className=' text-black font-bold'>The website:</span> Worked as a Frontend Engineer to restyle the entire website
-       using SASS and Tachyons. I also collaborated with a backend engineer to build out new onboarding flows, Status updates,
-        Profile pages, and advanced filters and searches. 
+      <p><span className=' text-black font-bold'>The website:</span> I Worked as a Full Stack Software Engineer, building out onboarding flows, profile pages, status updates and much more. 
       </p>
-      <p>I also helped develop a new platform for Working Not Working called NTRNL which helps companies with employee 
-        retention and management.
-      </p>
-      <p>Both websites were built with Ruby on Rails.</p>
       <p>
         <span className=' text-black font-bold'>The company:</span> With over 100,000 experienced Creatives on our site, 
           spanning various roles, skills, and industries, you can be confident with our new, personalized talent recommendations. 
@@ -83,7 +75,7 @@ export const projects = [
     previewImageTwo: wnwPreviewTwo,
     bgColor: '#3D50FC',
     slug: 'workingnotworking',
-    tags: ['Ruby on Rails', 'SASS', 'SQL'],
+    tags: ['Ruby on Rails', 'SASS', 'SQL', 'Figma'],
     featured: true,
     desktop: wnwDesktop,
     mobile: wnwMobile,
@@ -93,16 +85,13 @@ export const projects = [
     title: 'Tempopay',
     description: 'A company dedicated to make managing healthcare costs simple.',
     longDescription: <>
-    <p><span className=' text-black font-bold'>The website:</span> I developed this website designed by Redesign Health using 
-    Next Js and Contentful.
+    <p><span className=' text-black font-bold'>The website:</span> I Worked as a Software Enginner in collaboration with the Redesign Health design team. 
     </p>
     <p>
       <span className=' text-black font-bold'>The company:</span> TempoPay helps people access the care they need, and then 
       set up a flexible, personalized payment plan that works with the rhythm of their life. Because there's no interest, fees, 
       or credit check, there's no reason to defer care.
     </p>
-    <p>Employers and health plans that partner with TempoPay can keep pace with employees and members, 
-      and make sure they have everything they need to stay physically and financially healthy.</p>
     </>,
     year: '2022',
     url: 'https://www.tempopay.com/',
@@ -110,7 +99,7 @@ export const projects = [
     previewImageTwo: tempopayPreviewTwo,
     bgColor: '#F9E59E',
     slug: 'tempopay',
-    tags: ['Next Js', 'Contentful', 'SCSS'],
+    tags: ['Next Js', 'Contentful', 'SCSS', 'Figma'],
     featured: false,
     desktop: tempopayDesktop,
     mobile: wnwMobile,
@@ -120,9 +109,7 @@ export const projects = [
     title: 'Ace Hotel',
     description: 'A chain of boutique hotels with locations across the country and abroad.',
     longDescription: <>
-    <p><span className=' text-black font-bold'>The website:</span> I worked as a frontend engineer on the Ace Hotel website 
-    helping to implement new pages and features. This website was built with Vue Js and Python. I was also tasked with building 
-    out custom designed Squarespace websites for all the food and beverage associated with the many Ace Hotel properties. 
+    <p><span className=' text-black font-bold'>The website:</span> I worked as a Frontend Engineer for Atelier Ace the creative agency behind all the Ace Hotel properties. 
 
     </p>
     <p>
@@ -139,7 +126,7 @@ export const projects = [
     previewImageTwo: acePreviewTwo,
     bgColor: '#B39474',
     slug: 'acehotel',
-    tags: ['Vue Js', 'SASS'],
+    tags: ['Vue Js', 'SCSS', 'Nuxt Js', 'Figma'],
     featured: false,
     desktop: aceDesktop,
     mobile: aceMobile,
@@ -149,9 +136,7 @@ export const projects = [
     title: 'Getting Smart',
     description: 'Explore and highlight innovations in learning to empower all people to build capacity to thrive and steward in a complex and uncertain future.',
     longDescription: <>
-    <p><span className=' text-black font-bold'>The website:</span> This is a website by Frank LaRocca Studios that I had the 
-    privilege of working on. Implementing a custom Wordpress theme using Timber/Twig as well as PHP, SCSS, Javascript, 
-    Tailwind and ACF to help bring to life a design from the legendary design agency Pentagram.
+    <p><span className=' text-black font-bold'>The website:</span> I worked as a Frontend Engineer is collaboration with Studio LaRocca. The Getting Smart website was designed by the legendary design studio Pentagram.
     </p>
     <p>
       <span className=' text-black font-bold'>The company:</span> Getting Smart actively builds the future of learning by 
@@ -174,10 +159,7 @@ export const projects = [
     title: 'Elyse Walker',
     description: 'Styling for real life, luxury for every day.',
     longDescription: <>
-    <p><span className=' text-black font-bold'>The website:</span> This is a website by Frank Hugo & Marie that I had the 
-    privilege of working on. Implementing a custom Shopify theme using Liquid, Javascript, SCSS to help bring to develop a 
-    huge online e commerce platform for massive fashion brand.
-    </p>
+    <p><span className=' text-black font-bold'>The website:</span> I worked as a Frontend Engineer in collaboration with Hugo & Marie creative agency. Implementing a custom Shopify theme.    </p>
     <p>
       <span className=' text-black font-bold'>The company:</span> elysewalker is one of the most sought-after purveyors of 
       premium curated apparel, jewelry and accessories. Over the last 25 years, the company has garnered a reputation among 
@@ -200,9 +182,7 @@ export const projects = [
     title: 'Muir',
     description: 'A Marriott Autograph Collection boutique hotel in Halifax, Nova Scotia.',
     longDescription: <>
-    <p><span className=' text-black font-bold'>The website:</span> At a time when best-in-class brands aspire to transcend 
-    product—to be a trusted resource, to create signature experiences, and to build a community—elysewalker has made these 
-    elements the foundation of its brand, and the key to its success
+    <p><span className=' text-black font-bold'>The website:</span> I worked as a Frontend Engineer is collaboration with Studio LaRocca.
     </p>
     <p>
       <span className=' text-black font-bold'>The company:</span> Muir welcomes guests to a refined, distinctly Nova Scotian 
@@ -215,7 +195,7 @@ export const projects = [
     previewImageTwo: muirPreviewTwo,
     bgColor: 'rgb(165, 163, 167)',
     slug: 'muir',
-    tags: ['wordpress', 'tailwind', 'timber/twig'],
+    tags: ['wordpress', 'tailwind', 'timber/twig', 'Figma'],
     featured: false,
     desktop: muirDesktop,
     mobile: wnwMobile,
@@ -225,8 +205,7 @@ export const projects = [
     title: 'Super LA',
     description: 'A one-stop shop for all your real estate project needs.',
     longDescription: <>
-    <p><span className=' text-black font-bold'>The website:</span> This is a website I developed using Webflow. 
-    Leaning into transitions and scroll effects, also building custom online store.
+    <p><span className=' text-black font-bold'>The website:</span> I worked as a Software Engineer in collaboration with the SuperLA design team.
     </p>
     <p>
       <span className=' text-black font-bold'>The company:</span> We are a one-stop shop for all your real estate project needs. 
@@ -240,7 +219,7 @@ export const projects = [
     previewImageTwo: superlaPreviewOne,
     bgColor: '#ca9a8e',
     slug: 'superla',
-    tags: ['webflow', 'javascript', 'css', 'ecommerce'],
+    tags: ['webflow', 'javascript', 'css', 'e-commerce'],
     featured: false,
     desktop: superla,
     mobile: wnwMobile,
@@ -250,13 +229,10 @@ export const projects = [
     title: 'Checker Hall',
     description: 'A neighborhood bar and restaurant in Highland Park, Los Angeles.',
     longDescription: <>
-    <p><span className=' text-black font-bold'>The website:</span> At a time when best-in-class brands aspire to transcend 
-    product—to be a trusted resource, to create signature experiences, and to build a community—elysewalker has made these 
-    elements the foundation of its brand, and the key to its success
+    <p><span className=' text-black font-bold'>The website:</span> I worked as the Software Engineer to build this custom design in Webflow with custom illustrations and scroll animations.
     </p>
     <p>
-      <span className=' text-black font-bold'>The company:</span> Muir welcomes guests to a refined, distinctly Nova Scotian 
-      hospitality experience, in the absolute centre of downtown in the heart of the Halifax Waterfront.
+      <span className=' text-black font-bold'>The company:</span> Located on the second floor of a thoughtfully-restored masonic hall in the heart of L.A.'s Highland Park, we are proud to serve our neighborhood with thoughtfully curated food, drinks and music. We celebrate and continue the building's nearly century-long history as a community gathering place.
     </p>
       </>,
     year: '2022',
@@ -265,7 +241,7 @@ export const projects = [
     previewImageTwo: checkerhallPreviewOne,
     bgColor: 'rgb(123, 143, 127)',
     slug: 'checkerhall',
-    tags: ['webflow', 'javascript', 'css'],
+    tags: ['Webflow', 'Javascript', 'CSS', 'Figma'],
     featured: false,
     desktop: checkerhallDesktop,
     mobile: wnwMobile,

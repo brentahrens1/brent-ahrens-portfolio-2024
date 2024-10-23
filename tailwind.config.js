@@ -13,6 +13,9 @@ module.exports = {
         tempopay: "#F9E59E",
         projectSubText: 'rgba(0, 0, 0, 0.45)'
       },
+      fontSize: {
+        tiny: '10px'
+      },
       dropShadow: {
         'button': '0px 4px 4px rgba(0, 0, 0, 0.19)'
       },

@@ -30,9 +30,9 @@ const Accordion = ({title, description}: accordionProps) => {
           </div>
         </button>
         <div className={`grid overflow-hidden transition-all ease-in-out h-0 ${
-          accordionOpen ? 'grid-rows-[1fr] opacity-100 h-52 duration-500' : 'grid-rows-[0fr] opacity-0 duration-500'
+          accordionOpen ? 'grid-rows-[1fr] opacity-100 h-[27rem] md:h-52 duration-500' : 'grid-rows-[0fr] opacity-0 duration-500'
         }`}>
-          <p className="text-white text-2xl text-left overflow-hidden min-h-52 flex items-end">{description}</p>
+          <p className="text-white text-xl md:text-2xl text-left overflow-hidden min-h-52 flex items-end">{description}</p>
         </div>
       </div>
     </>

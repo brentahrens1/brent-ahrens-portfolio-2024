@@ -51,14 +51,15 @@ const FeaturedWork = () => {
                 src={wnw} alt="Young Arts Image"
               />
             </div>
-            <div className='flex flex-col lg:flex-row lg:items-end justify-between w-full mt-6'>
+            <div className='flex flex-col lg:flex-row justify-between w-full mt-6'>
               <div>
                 <p className='text-xl sm:text-2xl mb-[6px]'>Working Not Working</p>
-                <p className='text-sm text-projectSubText'>Website where hirers can find the top creative talent.</p>
+                <p className='text-sm text-projectSubText max-w-[400px]'>Software Engineer, converted entire website to Tachyons. Built onboarding flows, Status updates, Profile pages and more.</p>
+                <p className='text-tiny text-projectSubText max-w-[400px] mt-2'>Ruby on Rails, Tachyons, SASS, Javascript, Figma</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
-              <Button styles="hover:text-nightblue hover:underline" text="Website" url="https://www.workingnotworking.com" target="_blank" />
-              <Button styles="hover:text-nightblue hover:underline" url="/casestudy/workingnotworking" text="Case Study" />
+              <Button styles="hover:text-nightblue hover:underline flex items-center justify-center h-[50px]" text="Website" url="https://www.workingnotworking.com" target="_blank" />
+              <Button styles="hover:text-nightblue hover:underline flex items-center justify-center h-[50px]" url="/casestudy/workingnotworking" text="Case Study" />
               </div>
             </div>
           </div>
@@ -76,14 +77,15 @@ const FeaturedWork = () => {
                 src={tempopay} alt="Young Arts Image" 
               />
             </div>
-            <div className='flex flex-col lg:flex-row lg:items-end justify-between w-full mt-6'>
+            <div className='flex flex-col lg:flex-row justify-between w-full mt-6'>
               <div>
                 <p className='text-xl sm:text-2xl mb-[6px]'>Tempopay</p>
-                <p className='text-sm text-projectSubText'>Website for a company makes managing healthcare costs simple.</p>
+                <p className='text-sm text-projectSubText max-w-[400px]'>Frontend Engineer in collaboration with Redesign Health's design team</p>
+                <p className='text-tiny text-projectSubText mt-2'>Next Js, Typescript, Tailwind, Figma, Vercel</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
-                <Button styles="hover:text-nightblue hover:underline" url="https://www.tempopay.com" text="Website" target="_blank" />
-                <Button styles="hover:text-nightblue hover:underline" url="/casestudy/tempopay" text="Case Study" />
+                <Button styles="hover:text-nightblue hover:underline flex items-center justify-center h-[50px]" url="https://www.tempopay.com" text="Website" target="_blank" />
+                <Button styles="hover:text-nightblue hover:underline flex items-center justify-center h-[50px]" url="/casestudy/tempopay" text="Case Study" />
               </div>
             </div>
           </div>

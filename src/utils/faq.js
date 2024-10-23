@@ -5,14 +5,14 @@ export const serviceItems = [
       "What is your timeline?", 
       "Who have you worked with?",
       "Will we be able to update our site?",
-      "How do payemnts work?",
+      "How much will it cost?",
     ],
     answers: [
-      "React, Javascript, CSS/SCSS/Tailwind or any modern styling tool or framework, Webflow, Figma, Wordpress, Squarespace", 
-      "The timeline can vary depending on the project. At the start of every new project I do an in depth breakdown of wach step in the design and development process and offer a detailed breakdown of my timeline to complete the project.", 
-      "I have worked with a wide variety of clients with incredibly diverse backgrounds across many industries. Clients include: Working Not Working, Ace Hotel, Redesign Health, ThinkingBox, Hugo & Marie, Gates Creative, Grizzly, Studio LaRocca",
-      "Yes! We will choose the content management system that's right for you. There are a ton of good options and it's based to select a CMS that most suits your comapnies needs.",
-      "The costs varies based the of scope of work for the project. I offer 2 different plans an hourly plan or a project fee. With the hourly plan we agree upon an hourly amount and I will invoice billable hours every 2 weeks. Witht he project fee we will agree upon a fee and 1 half is paid at the start of the project and the second half when the development is complete."
+      "I have extensive experience working with technologies such as React, JavaScript, CSS/SCSS/Tailwind, HTML, Vue.js, Webflow, Figma, WordPress, Squarespace, and more. The tech stack we choose often depends on your specific needs and goals. Once we understand exactly what you're looking for, we'll recommend the best tools and technologies to ensure your project is efficient, scalable, and future-proof. Whether it's a fully custom solution or leveraging existing platforms, we tailor our approach to fit your business requirements.", 
+      "The timeline for your project depends on its scope and requirements. For example, a simple landing page can often be completed within a few days to a couple of weeks. On the other hand, a more complex project, like a full e-commerce site, may take several weeks or longer. If you already have designs and assets ready, we can hit the ground running, reducing the development time. However, if you need design work, branding, or content creation, we'll factor in additional time for those elements to ensure the final product aligns perfectly with your vision.", 
+      "I've had the privilege of collaborating with a wide range of clients from diverse industries, each bringing unique challenges and creative opportunities. Some of the clients I've worked with include: Working Not Working, Ace Hotel, Redesign Health, ThinkingBox,Hugo & Marie, Gates Creative, Grizzly, Studio LaRocca",
+      "Yes! We'll select the content management system (CMS) that best suits your company's needs. There are many great options available, and we'll ensure the CMS is user-friendly and aligns with how you want to manage content. Whether it's WordPress, Webflow, or another platform, we'll empower you to easily make updates and keep your site fresh.",
+      "The cost depends on the scope of the project. I offer two pricing options: Hourly Rate - Ideal for smaller tasks or ongoing work. Project-Based Fee - A fixed cost for the entire project, perfect for well-defined scopes with clear deliverables. Once we discuss your specific needs, I'll provide a detailed estimate tailored to your project. This ensures transparency and flexibility, so you can choose the option that works best for you."
     ]
   },
 ];
