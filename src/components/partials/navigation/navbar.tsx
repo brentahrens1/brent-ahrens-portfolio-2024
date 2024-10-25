@@ -30,8 +30,8 @@ const Navbar = () => {
         className={`flex items-center justify-between w-full relative`}
       >
         <div 
-          onClick={() => setIsOverlayOpen(!isOverlayOpen)} 
-          className={`drop-shadow-button w-11 h-11 min-w-11 min-h-11 rounded-full bg-white gap-[6px] cursor-pointer z-50
+          onClick={() => setIsOverlayOpen(!isOverlayOpen)}
+          className={`drop-shadow-button min-w-11 min-h-11 rounded-full bg-white gap-[6px] cursor-pointer z-50
             flex-col items-center justify-center overflow-hidden ${isScrolled ? 'flex -translate-x-6 xl:-translate-x-14' : 'flex lg:hidden'}`}
           >
           <div

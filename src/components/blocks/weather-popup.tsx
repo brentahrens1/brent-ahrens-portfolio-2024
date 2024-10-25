@@ -25,10 +25,10 @@ const WeatherPopup = ({weatherOpen}: weatherPopupProps) => {
       {
       getWeather ?
         <div
-          className={`flex absolute -top-[10%] lg:-top-[100%] right-0 bg-white border drop-shadow-button rounded-3xl transition-all duration-[.6s] z-20
-          flex-col items-center justify-center py-6 ${weatherOpen ? 'w-80 opacity-1 visible h-56' : 'w-0 opacity-0 invisible h-0'}`}
+          className={`flex fixed left-1/2 -translate-x-1/2 bg-white border drop-shadow-button rounded-3xl transition-all duration-[.6s] z-20
+          flex-col items-center justify-center py-6 w-80 ${weatherOpen ? 'top-0 opacity-1' : '-top-full opacity-0'}`}
         >
-          <div className={`flex flex-col items-center justify-center transition-all duration-200 ${weatherOpen ? 'opacity-1' : 'opacity-0'}`}>
+          <div className={`flex flex-col items-center justify-center transition-all duration-200 ${weatherOpen ? '' : ''}`}>
             <div className=" w-16">
               <img className="w-full" src={getWeather.current.condition.icon} alt={getWeather.current.condition.text} />
             </div>
