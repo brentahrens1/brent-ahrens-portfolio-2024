@@ -10,7 +10,7 @@ const WeatherPopup = ({weatherOpen}: weatherPopupProps) => {
   useEffect(() => {
     async function getWeatherData() {
       try {
-        const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER}&q=Los Angeles&aqi=no`);
+        const data = await fetch(`https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER}&q=Los Angeles&aqi=no`);
         const res = await data.json();
         setGetWeather(res);
       } catch (error) {
@@ -33,7 +33,7 @@ const WeatherPopup = ({weatherOpen}: weatherPopupProps) => {
               <img className="w-full" src={getWeather.current.condition.icon} alt={getWeather.current.condition.text} />
             </div>
             <p className="text-2xl text-black">{getWeather.current.condition.text}</p>
-            <p className="text-black mt-3">{getWeather.current.temp_f}°</p>
+            <p className="text-black mt-3 text-5xl">{getWeather.current.temp_f}°</p>
           </div>
         </div>
         :
