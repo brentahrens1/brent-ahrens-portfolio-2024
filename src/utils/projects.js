@@ -134,7 +134,7 @@ export const projects = [
   },
   {
     title: 'Getting Smart',
-    description: 'Explore and highlight innovations in learning to empower all people to build capacity to thrive and steward in a complex and uncertain future.',
+    description: 'A podcast that explores and highlights innovations in learning.',
     longDescription: <>
     <p><span className=' text-black font-bold'>The website:</span> I worked as a Frontend Engineer is collaboration with Studio LaRocca. The Getting Smart website was designed by the legendary design studio Pentagram.
     </p>
@@ -157,7 +157,7 @@ export const projects = [
   },
   {
     title: 'Elyse Walker',
-    description: 'Styling for real life, luxury for every day.',
+    description: 'An online shop for one of the most sought-after purveyors of premium curated apparel, jewelry and accessories.',
     longDescription: <>
     <p><span className=' text-black font-bold'>The website:</span> I worked as a Frontend Engineer in collaboration with Hugo & Marie creative agency. Implementing a custom Shopify theme.    </p>
     <p>
