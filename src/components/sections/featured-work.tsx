@@ -17,7 +17,7 @@ const FeaturedWork = () => {
           <p className="text-2xl mb-10 lg:mb-44">Featured Work</p>
           
           <div className="flex flex-col sm:flex-row lg:flex-col gap-0 sm:gap-6 lg:gap-0" ref={ref2}>
-            <div className='relative border-4 border-nightblue bg-nightblue rounded-[25px] overflow-hidden pt-7 lg:pt-14 max-w-[775px] lg:min-h-[445px] block sm:hidden'>
+            <div className='relative border-4 border-nightblue bg-nightblue rounded-[25px] overflow-hidden pt-8 max-w-[775px] lg:min-h-[445px] block sm:hidden'>
               <div className='absolute top-[7px] lg:top-5 left-5 flex items-center gap-3'>
                 <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
                 <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
