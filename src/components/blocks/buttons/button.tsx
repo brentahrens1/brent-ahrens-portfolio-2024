@@ -19,7 +19,7 @@ const Button = (
             rel="noopener noreferrer"
             className={`px-6 py-3 border drop-shadow-button rounded-full block cursor-pointer 
               transition-all duration-200 ease-in-out bg-offwhite 
-              hover:underline text-sm sm:text-base text-center whitespace-nowrap ${styles}`
+              text-sm sm:text-base text-center whitespace-nowrap ${styles}`
             }
           >
             {text}
@@ -27,7 +27,7 @@ const Button = (
         :
           <div
             className={`block px-6 py-3 border drop-shadow-button rounded-full cursor-pointer 
-              transition-all duration-200 ease-in-out bg-offwhite hover:underline ${styles}`}>
+              transition-all duration-200 ease-in-out bg-offwhite ${styles}`}>
             <p className={`text-sm sm:text-base text-center whitespace-nowrap`}>{text}</p>
           </div>
       }

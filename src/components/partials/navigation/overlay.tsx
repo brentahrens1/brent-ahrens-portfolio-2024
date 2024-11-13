@@ -97,7 +97,7 @@ const Overlay = ({ isOverlayOpen, setIsOverlayOpen }: OverlayProps) => {
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-between mt-16 sm:mt-24">
               <div>
-                <p className="text-sm text-lightgray">©Studio Wozzie 2024</p>
+                <p className="text-sm text-lightgray">©Brent Ahrens 2024</p>
               </div>
               <div className="flex items-center gap-14">
                 <Link to="https://www.linkedin.com/in/brenthahrens/" target="_blank" className="text-sm text-lightgray">Linkedin</Link>

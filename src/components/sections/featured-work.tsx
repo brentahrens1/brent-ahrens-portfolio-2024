@@ -19,9 +19,9 @@ const FeaturedWork = () => {
           <div className="flex flex-col sm:flex-row lg:flex-col gap-0 sm:gap-6 lg:gap-0" ref={ref2}>
             <div className='relative border-4 border-nightblue bg-nightblue rounded-[25px] overflow-hidden pt-7 lg:pt-14 max-w-[775px] lg:min-h-[445px] block sm:hidden'>
               <div className='absolute top-[7px] lg:top-5 left-5 flex items-center gap-3'>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
               </div>
               <img
                 className={`w-full transition-all duration-700 ${
@@ -30,8 +30,8 @@ const FeaturedWork = () => {
                 src={youngArtsDesktop} alt="Young Arts Image"
               />
             </div>
-            <div className="bg-nightblue border-4 border-nightblue rounded-[30px] h-[600px] lg:w-[315px] relative overflow-hidden pt-14 hidden sm:block">
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 h-4 w-28 bg-white rounded-full"></div>
+            <div className="bg-nightblue border-4 border-nightblue rounded-[30px] h-[600px] lg:w-[315px] relative overflow-hidden pt-8 hidden sm:block">
+              <div className="absolute top-[.6rem] left-1/2 -translate-x-1/2 h-[.7rem] w-16 bg-white rounded-full"></div>
               <img 
                 className={`w-full transition-all duration-700 ${
                   inView2 ? 'opactiy-100' : 'opacity-0'
@@ -44,19 +44,19 @@ const FeaturedWork = () => {
                 <p className='text-xl sm:text-2xl mb-[6px]'>Young Arts</p>
               </div>
               <div className='flex flex-row sm:flex-col lg:flex-row items-start lg:items-center lg:justify-between gap-5 mt-3 lg:mt-0'>
-                <Button styles="hover:text-nightblue hover:underline" url="https://www.youngarts.org" text="Website" target="_blank" />
-                <Button styles="hover:text-nightblue hover:underline" url="/casestudy/youngarts" text="Case Study" />
+                <Button styles="hover:text-white hover:bg-nightblue" url="https://www.youngarts.org" text="Website" target="_blank" />
+                <Button styles="hover:text-white hover:bg-nightblue" url="/casestudy/youngarts" text="Case Study" />
               </div>
             </div>
           </div>
         </div>
         <div>
           <div ref={ref1} className='mb-10 lg:mb-[260px]'>
-            <div className='relative border-4 border-youngarts bg-youngarts rounded-[25px] overflow-hidden pt-7 lg:pt-14 max-w-[775px] lg:min-h-[445px]'>
-              <div className='absolute top-[7px] lg:top-5 left-5 flex items-center gap-3'>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
+            <div className='relative border-4 border-youngarts bg-youngarts rounded-[25px] overflow-hidden pt-8 max-w-[775px] lg:min-h-[445px]'>
+              <div className='absolute top-[.6rem] left-5 flex items-center gap-3'>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
               </div>
               <img
                 className={`w-full transition-all duration-700 ${
@@ -72,17 +72,17 @@ const FeaturedWork = () => {
                 <p className='text-tiny text-projectSubText max-w-[400px] mt-2'>Ruby on Rails, Tachyons, SASS, Javascript, Figma</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
-              <Button styles="hover:text-nightblue hover:underline flex items-center justify-center h-[50px]" text="Website" url="https://www.workingnotworking.com" target="_blank" />
-              <Button styles="hover:text-nightblue hover:underline flex items-center justify-center h-[50px]" url="/casestudy/workingnotworking" text="Case Study" />
+              <Button styles="hover:text-white hover:bg-nightblue flex items-center justify-center h-[50px]" text="Website" url="https://www.workingnotworking.com" target="_blank" />
+              <Button styles="hover:text-white hover:bg-nightblue flex items-center justify-center h-[50px]" url="/casestudy/workingnotworking" text="Case Study" />
               </div>
             </div>
           </div>
           <div ref={ref3}>
-            <div className='relative border-4 border-tempopay bg-tempopay rounded-[25px] overflow-hidden pt-7 lg:pt-14 max-w-[775px] lg:min-h-[445px]'>
-              <div className='absolute top-[7px] lg:top-5 left-5 flex items-center gap-3'>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
-                <div className='bg-white w-[13px] h-[13px] lg:w-4 lg:h-4 rounded-full'></div>
+            <div className='relative border-4 border-tempopay bg-tempopay rounded-[25px] overflow-hidden pt-8 max-w-[775px] lg:min-h-[445px]'>
+              <div className='absolute top-[.6rem] left-5 flex items-center gap-3'>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
+                <div className='bg-white w-[10px] h-[10px] rounded-full'></div>
               </div>
               <img 
                 className={`w-full transition-all duration-700 ${
@@ -98,8 +98,8 @@ const FeaturedWork = () => {
                 <p className='text-tiny text-projectSubText mt-2'>Next Js, Typescript, Tailwind, Figma, Vercel</p>
               </div>
               <div className='flex gap-5 mt-3 lg:mt-0'>
-                <Button styles="hover:text-nightblue hover:underline flex items-center justify-center h-[50px]" url="https://www.tempopay.com" text="Website" target="_blank" />
-                <Button styles="hover:text-nightblue hover:underline flex items-center justify-center h-[50px]" url="/casestudy/tempopay" text="Case Study" />
+                <Button styles="hover:text-white hover:bg-nightblue flex items-center justify-center h-[50px]" url="https://www.tempopay.com" text="Website" target="_blank" />
+                <Button styles="hover:text-white hover:bg-nightblue flex items-center justify-center h-[50px]" url="/casestudy/tempopay" text="Case Study" />
               </div>
             </div>
           </div>

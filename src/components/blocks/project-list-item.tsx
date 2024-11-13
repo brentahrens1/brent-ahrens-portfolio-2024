@@ -21,12 +21,12 @@ const ProjectListItem = ({
     <div 
       onMouseEnter={() => setIsHovered(!isHovered)}
       onMouseLeave={() => setIsHovered(!isHovered)}
-      className={`py-7 border-b border-black relative w-full`}
+      className={`py-7 border-b border-black relative w-full overflow-hidden`}
     >
       <div className="flex flex-col lg:flex-row items-start justify-between gap-5">
         <div className={
-          `absolute top-0 left-0 h-full transition-all ease-in-out -z-10 
-          ${isHovered ? 'w-full duration-[2s]' : 'w-[0%] duration-700'}`}
+          `absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out -z-10 rounded-full
+          ${isHovered ? 'duration-[1.3s] scale-150 h-full w-full' : ' scale-0 duration-[1.3s] w-4 h-4 '}`}
           style={{backgroundColor: bgColor}}
         >
         </div>
@@ -45,7 +45,7 @@ const ProjectListItem = ({
       <div 
         className={
           `grid grid-cols-2 grid-rows-1 gap-5 section-h-padding overflow-hidden transition-all ease-in-out h-0 w-full lg:w-[52%]
-          ${isHovered ? 'grid-rows-[1fr] opacity-100 duration-[1s] delay-[1s] h-[170px]' : 'grid-rows-[0fr] duration-[1s] opacity-0'}
+          ${isHovered ? 'grid-rows-[1fr] opacity-100 duration-700 delay-300 h-[170px]' : 'grid-rows-[0fr] duration-700 opacity-0'}
           `
         }
       >

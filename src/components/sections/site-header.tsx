@@ -105,7 +105,7 @@ const SiteHeader = () => {
             className=" inline-flex relative px-7 py-1 transition-all duration-200 ease-in-out 
               hover:text-white hover:underline cursor-pointer z-10 overflow-clip"
           >
-            <span className="group-hover:opacity-0 transition-all duration-100">Services</span>
+            <span className="group-hover:opacity-0 transition-all duration-100">services</span>
             <div 
               className="combined-transform combined-transform-animation absolute top-1/2 left-0 w-100 flex items-center 
                 justify-start gap-2 transition-all duration-100 opacity-0 group-hover:opacity-100"
@@ -155,7 +155,7 @@ const SiteHeader = () => {
             className="relative px-7 py-1 transition-all duration-200 ease-in-out 
               hover:text-white hover:underline cursor-pointer z-10 overflow-clip"
           >
-            <span className="group-hover:opacity-0 transition-all duration-100">Services</span>
+            <span className="group-hover:opacity-0 transition-all duration-100">services</span>
           </Link>
         </span>
       </div>

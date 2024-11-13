@@ -76,10 +76,11 @@ const CaseStudy = () => {
             <div
               onClick={() => setIsDesktop(!isDesktop)}
               className="px-6 py-3 border drop-shadow-button rounded-full bg-offwhite cursor-pointer 
-                transition-all duration-200 ease-in-out hover:text-nightblue hover:underline">
+                transition-all duration-200 ease-in-out hover:bg-nightblue hover:text-white hover:border-nightblue no-underline">
               <p className="text-sm">{isDesktop ? 'View Mobile' : 'View Desktop'}</p>
             </div>
             <Button 
+              styles='hover:bg-nightblue hover:text-white hover:border-nightblue no-underline'
               url={project.url} 
               text='Website'
               target='_blank'
